@@ -49,12 +49,14 @@ Q: Is your computer a desktop or a laptop?
 
 
 ## NABEEL
--Work w Seymour to find quesitons
-
-
-
-
-
-
-
+- Work w Seymour to find quesitons
+- Are you on a phone or a tablet?
+- Is it an andriod or apple porduct?
+- Is your PC running slow
+- IS your screen black
+- Are you not able to open google?
+- What browser are you using?
+- When does this happen?
+- Do you face this issue frequintly? 
+ 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
