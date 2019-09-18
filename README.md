@@ -4,16 +4,17 @@
 
 ## MILESTONES: Tues and Thurs
 
-##Cassidy's zone
+
+## Cassidy's zone
 
 - Q: Is there a problem with your internet?
 - Q: When was the last time you shut down your computer?
 - Q: When was the last time you backed up your computer?
 - Q: Do you use any anti virus software?
-	-		Q: When was the last time you scanned your computer for viruses?	*Tabbed in is a follow up question*
-	-		Q: Do pop-up ads appear regulary on your desktop?
-	-		Q: Do you regulary access dodgy websites?
-	-		Q: Have you ever opened up email attachments from an unrecognised sender?
+	- Q: When was the last time you scanned your computer for viruses?	*Tabbed in is a follow up question*
+	- Q: Do pop-up ads appear regulary on your desktop?
+	- Q: Do you regulary access dodgy websites?
+	- Q: Have you ever opened up email attachments from an unrecognised sender?
 - Q: What colour lights does your modem have?
 	Q: Do the lights on your modem blink?
 - Q: Do the LEDs on your computer case work when your computer is turned on?
@@ -48,12 +49,14 @@
 
 
 ## NABEEL
--Work w Seymour to find quesitons
-
-
-
-
-
-
-
-
+- Work w Seymour to find quesitons
+- Are you on a phone or a tablet?
+- Is it an andriod or apple porduct?
+- Is your PC running slow
+- IS your screen black
+- Are you not able to open google?
+- What browser are you using?
+- When does this happen?
+- Do you face this issue frequintly? 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
