@@ -4,9 +4,8 @@
 
 ## MILESTONES: Tues and Thurs
 
-~~~~~~~~~~~ Cassidy's zone ~~~~~~~~~~~
+#Cassidy's zone
 
-<<<<<<< HEAD
 Q: Is there a problem with your internet?
 Q: When was the last time you shut down your computer?
 Q: When was the last time you backed up your computer?
@@ -57,4 +56,4 @@ Q: Is your computer a desktop or a laptop?
 
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
