@@ -4,7 +4,7 @@
 
 ## MILESTONES: Tues and Thurs
 
-#Cassidy's zone
+##Cassidy's zone
 
 - Q: Is there a problem with your internet?
 - Q: When was the last time you shut down your computer?
