@@ -41,7 +41,9 @@ Q: Is your computer a desktop or a laptop?
 ## Seymour 
 -Do 10 Questions 
 
-
+-Are You on a Laptop,PC or Phone
+-Are There Any Noises Coming From Your PC
+	-Where Is Noise Located 
 
 
 
