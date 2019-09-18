@@ -2,7 +2,7 @@
 
 
 
-## ILESTONES: Tues and Thurs
+## MILESTONES: Tues and Thurs
 
 ~~~~~~~~~~~ Cassidy's zone ~~~~~~~~~~~
 
@@ -46,7 +46,7 @@ Q: Is your computer a desktop or a laptop?
 
 
 
-##NABEEL
+## NABEEL
 -Work w Seymour to find quesitons
 
 
