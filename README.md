@@ -2,10 +2,11 @@
 
 
 
-## MILESTONES: Tues and Thurs
+## ILESTONES: Tues and Thurs
 
 ~~~~~~~~~~~ Cassidy's zone ~~~~~~~~~~~
 
+<<<<<<< HEAD
 Q: Is there a problem with your internet?
 Q: When was the last time you shut down your computer?
 Q: When was the last time you backed up your computer?
@@ -27,5 +28,31 @@ Q: Do you use the same passwords for everything?
 Q: Do you have trouble connecting your phone to your wifi network?
 Q: What provider do you run your internet through?
 Q: Is your computer a desktop or a laptop?
+
+
+
+
+
+
+
+
+
+
+## Seymour 
+-Do 10 Questions 
+
+
+
+
+
+
+##NABEEL
+-Work w Seymour to find quesitons
+
+
+
+
+
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
