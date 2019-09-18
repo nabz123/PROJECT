@@ -2,7 +2,7 @@
 
 
 
-## ILESTONES: Tues and Thurs
+## MILESTONES: Tues and Thurs
 
 ~~~~~~~~~~~ Cassidy's zone ~~~~~~~~~~~
 
