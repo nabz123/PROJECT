@@ -2,7 +2,7 @@
 
 
 
-## MILESTONES: Tues and Thurs
+## ILESTONES: Tues and Thurs
 
 ~~~~~~~~~~~ Cassidy's zone ~~~~~~~~~~~
 
@@ -23,6 +23,8 @@
 
 
 
+##NABEEL
+-Work w Seymour to find quesitons
 
 
 
