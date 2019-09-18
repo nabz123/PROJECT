@@ -10,10 +10,10 @@
 - Q: When was the last time you shut down your computer?
 - Q: When was the last time you backed up your computer?
 - Q: Do you use any anti virus software?
-	-- Q: When was the last time you scanned your computer for viruses?	*Tabbed in is a follow up question*
-	-- Q: Do pop-up ads appear regulary on your desktop?
-	-- Q: Do you regulary access dodgy websites?
-	-- Q: Have you ever opened up email attachments from an unrecognised sender?
+	- Q: When was the last time you scanned your computer for viruses?	*Tabbed in is a follow up question*
+	- Q: Do pop-up ads appear regulary on your desktop?
+	- Q: Do you regulary access dodgy websites?
+	- Q: Have you ever opened up email attachments from an unrecognised sender?
 - Q: What colour lights does your modem have?
 	Q: Do the lights on your modem blink?
 - Q: Do the LEDs on your computer case work when your computer is turned on?
