@@ -5,7 +5,7 @@
 ## MILESTONES: Tues and Thurs
 
 
-## Cassidy's zone
+## Cassidy
 
 - Q: Is there a problem with your internet?
 - Q: When was the last time you shut down your computer?
@@ -48,8 +48,8 @@
 
 
 
-## NABEEL
-- Work w Seymour to find quesitons
+## Nabeel
+
 - Are you on a phone or a tablet?
 - Is it an andriod or apple porduct?
 - Is your PC running slow
@@ -59,3 +59,8 @@
 - When does this happen?
 - Do you face this issue frequintly? 
  
+
+ ## Bradley
+
+ Just add in any relevant questions you think of, this is a working space so don't worry if we have double ups or if they're shit. When we do our
+ code we will do it one question at a time first and then work out how to link all the questions together later. 
