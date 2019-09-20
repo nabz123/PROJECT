@@ -16,7 +16,7 @@
 	- Q: Do you regulary access dodgy websites?
 	- Q: Have you ever opened up email attachments from an unrecognised sender?
 - Q: What colour lights does your modem have?
-	Q: Do the lights on your modem blink?
+	- Q: Do the lights on your modem blink?
 - Q: Do the LEDs on your computer case work when your computer is turned on?
 - Q: Is your computer running slower than normal?
 - Q: Is your internet running slower than normal?
