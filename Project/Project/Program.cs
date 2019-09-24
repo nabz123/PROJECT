@@ -10,7 +10,7 @@ namespace Project
         {
             int input, count = 0;
 
-            while (count!=1)
+            while (count != 1)
             {
                 UserName();
                 count++;
@@ -305,7 +305,7 @@ namespace Project
 
 
 
-               
+
             }
 
 
@@ -377,7 +377,13 @@ namespace Project
         {
 
 
-            /*if (answer.Contains("y"))
+            /*string answer, answer2, answer3, answer4, answer5, answer6;
+            bool check = false;
+            Console.WriteLine("Are you having problems with your computers hardware?");
+            answer = Console.ReadLine();
+            answer = answer.ToLower();
+
+            if (answer.Contains("y"))
             {
                 Console.WriteLine("Do you believe the problems are happening outside the computer (such as cables), or inside the computer? Or are you not sure?");
                 answer2 = Console.ReadLine();
@@ -391,13 +397,67 @@ namespace Project
                         Console.WriteLine("Have you tried unplugging and replugging-in your cables?");
                         answer3 = Console.ReadLine();
                         answer3 = answer3.ToLower();
+                        if (answer3.Contains("y"))
+                        {
+                            Console.WriteLine("Are you sure you are having hardware problems?");
+                            answer4 = Console.ReadLine();
+                            answer4 = answer4.ToLower();
+
+                            if (answer4.Contains("y"))
+                            {
+                                Console.WriteLine("Are you sure it is cable related?");
+                                answer5 = Console.ReadLine();
+                                answer5 = answer5.ToLower();
+
+                                if (answer5.Contains("y"))
+                                {
+                                    Console.WriteLine("Have you ever had cable problems before?");
+                                    answer6 = Console.ReadLine();
+                                    answer6 = answer6.ToLower();
+
+                                    if (answer6.Contains("y"))
+                                    {
+                                        Console.WriteLine("It is possible that you have a problem with the cables and you may have to replace them.");
+                                        //change back to menu
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Make sure all cables are placed into the correct slot");
+                                        //change back to menu
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Make sure all cables are placed into the correct slot");
+                                    //change back to menu
+                                }
+                            }
+                            else
+                            {
+                                check = true;
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Try unplugged and re-plugging your cables.");
+                            //change back to menu
+                        }
                         break;
                     case "inside":
                     case "in":
-                        Console.WriteLine("");
+                        Console.WriteLine("");          //Nabeel do this
                         break;
                 }
-            }*/
+                if (check == true)
+                {
+                    Console.WriteLine($"Last time I asked you that question you gave me a different answer, {name}. Please don't lie to me.");
+                    //change back to menu
+                }
+
+            }
+
+        }
+*/
             string answer, ans2;
             Console.WriteLine("Are you facing a Monitor issue Y or N?");
             answer = Console.ReadLine();
@@ -426,13 +486,13 @@ namespace Project
             }
             else
             {
-                string ans3, ans4, ans5, ans6,ans7,ans8;
-                Console.WriteLine("Is your DESKTOP shtting off randomly? Y or N");
+                string ans3, ans4, ans5, ans6, ans7, ans8;
+                Console.WriteLine("Is your desktop shutting off randomly? Y or N");
                 ans3 = Console.ReadLine();
                 ans3 = ans3.ToLower();
                 if (ans3.Contains("y"))
                 {
-                    Console.WriteLine("Do ypu blieve this is a RAM or cables issue? Or are you not sure??");
+                    Console.WriteLine("Do you believe this is a RAM or cables issue? Or are you not sure??");
                     ans4 = Console.ReadLine();
                     ans4 = ans4.ToLower();
 
@@ -443,7 +503,11 @@ namespace Project
                             Console.WriteLine("Is the cable loose? If so try pushing in?");
                             break;
                         case "RAM":
-                            Console.WriteLine("If on a desktop have you tried push it in to place?");
+                        case "ram":
+                            Console.WriteLine("Are you sure your RAM is installed correctly?");
+                            break;
+                        default:
+                            Console.WriteLine("Have you troubleshooted it for problems?");
                             break;
                     }
                 }
@@ -454,11 +518,11 @@ namespace Project
                     ans5 = ans5.ToLower();
                     if (ans5.Contains("y"))
                     {
-                        Console.WriteLine("Do you bleive this is related to having many programs running or you don't have anymore storage remianing? Or are you not sure");
+                        Console.WriteLine("Do you believe this is related to having many programs running or you don't have anymore storage remianing? Or are you not sure");
                         ans6 = Console.ReadLine();
                         ans6 = ans6.ToLower();
 
-                        switch(ans6)
+                        switch (ans6)
                         {
                             case "slow":
                             case "freezing":
@@ -472,18 +536,89 @@ namespace Project
                                     ans8 = ans8.ToLower();
                                     Console.WriteLine("Have you deleted the temp files?");
                                 }
-                                    
                                 break;
-                             
                         }
                     }
+                    else
+                    {
+                        string anss, anss1, anss2, anss3, anss4;
+                        bool check = false;
+                        Console.WriteLine("Do you believe the problems are happening outside the computer (such as cables), or inside the computer? Or are you not sure?");
+                        anss = Console.ReadLine();
+                        anss = anss.ToLower();
 
-                        
-                    
+                        switch (anss)
+                        {
+                            case "cable":
+                            case "cables":
+                            case "outside":
+                                Console.WriteLine("Have you tried unplugging and replugging-in your cables?");
+                                anss1 = Console.ReadLine();
+                                anss1 = anss1.ToLower();
+                                if (anss1.Contains("y"))
+                                {
+                                    Console.WriteLine("Are you sure you are having hardware problems?");
+                                    anss2 = Console.ReadLine();
+                                    anss2 = anss2.ToLower();
+
+                                    if (anss2.Contains("y"))
+                                    {
+                                        Console.WriteLine("Are you sure it is cable related?");
+                                        anss3 = Console.ReadLine();
+                                        anss3 = anss3.ToLower();
+                                        if (anss3.Contains("y"))
+                                        {
+                                            Console.WriteLine("Have you ever had cable problems before?");
+                                            anss4 = Console.ReadLine();
+                                            anss4 = anss4.ToLower();
+
+                                            if (anss4.Contains("y"))
+                                            {
+                                                Console.WriteLine("It is possible that you have a problem with the cables and you may have to replace them.");
+                                                //change back to menu
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("Make sure all cables are placed into the correct slot");
+                                                //change back to menu
+                                            }
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Make sure all cables are placed into the correct slot");
+                                            //change back to menu
+                                        }
+
+                                    }
+                                    else
+                                    {
+                                        check = true;
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Try unplugged and re-plugging your cables.");
+                                    //change back to menu
+                                }
+                                break;
+                            case "inside":
+                            case "in":
+                                Console.WriteLine("");          //Nabeel do this
+                                break;
+                        }
+                        if (check == true)
+                        {
+                            Console.WriteLine($"Last time I asked you that question you gave me a different answer, {name}. Please don't lie to me.");
+                            //change back to menu
+                        }
+                    }
                 }
+                Console.ReadLine();
             }
-            Console.ReadLine();
         }
+
+
+
 
         //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
@@ -517,7 +652,7 @@ namespace Project
                 if (answer2 == "android")
                 {
 
-                   
+
 
 
 
