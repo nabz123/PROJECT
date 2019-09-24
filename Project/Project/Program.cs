@@ -8,61 +8,54 @@ namespace Project
         public static string name;
         static void Main()
         {
-            string uInput="0/";
-            int input;
-            do
-            {
-
-                Console.WriteLine("Hardware                 1");
-                Console.WriteLine("Networking/Internet      2");
-                Console.WriteLine("Device/Phone/Tablet      3");
-                Console.WriteLine("I dont know              4");
-                Console.WriteLine("Close                    5");
-                input = Convert.ToInt32(Console.ReadLine());
 
 
-                switch (input)
+
+                int input = 1;
+
+
+
+                do
                 {
+                    Console.Clear();
+                    Console.WriteLine("Welcome to The Menu");
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.WriteLine("Networking");
+                    Console.WriteLine("Option 2");
+                    Console.WriteLine("Option 3");
+                    Console.WriteLine("Option 4");
+                    Console.WriteLine("Option 5");
+                    Console.WriteLine("Close");
+                    input = Convert.ToInt16(Console.ReadLine());
 
-                    case 1:
-                        Hardware();
-                           break;
-
-                    case 2:
-                        Console.Clear();
-                           
-                        Networking();
-
-                        break;
+                    Console.Clear();
 
 
-                    case 3:
+                    switch (input)
+                    {
+                        case 1:
+                            Networking();
+                            break;
 
-                        Device();
-                        break;
 
-                    case 4:
 
-                       Dontknow();
-                        break;
-
-                  case 5:
-                       uInput = "5";
-                        break;
-
-                           
-                        
+                  
+                    }
 
 
 
 
 
-                }
+
+                } while (input != 0);
 
 
 
 
-            } while (uInput != "5");
+
+
+   
 
 
 
@@ -229,7 +222,7 @@ namespace Project
         ///
 
 
-        static void Networking()
+        public static void Networking()
 
 
         {
@@ -397,7 +390,7 @@ namespace Project
 
         static void Unsure()
         {
-            string answer, answer2, answer3
+            string answer, answer2, answer3;
         }
 
 
