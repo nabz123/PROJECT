@@ -8,14 +8,14 @@ namespace Project
         public static string name;
         static void Main()
         {
-            string uInput;
+            string uInput="0/";
             int input;
             do
             {
 
                 Console.WriteLine("Hardware                 1");
                 Console.WriteLine("Networking/Internet      2");
-                Console.WriteLine("Device/Phone/Tablet       3");
+                Console.WriteLine("Device/Phone/Tablet      3");
                 Console.WriteLine("I dont know              4");
                 Console.WriteLine("Close                    5");
                 input = Convert.ToInt32(Console.ReadLine());
@@ -26,9 +26,11 @@ namespace Project
 
                     case 1:
                         Hardware();
-                            break;
+                           break;
 
                     case 2:
+                        Console.Clear();
+                           
                         Networking();
 
                         break;
@@ -41,11 +43,11 @@ namespace Project
 
                     case 4:
 
-                        Dontknow();
+                        Unsure();
                         break;
 
-                    case 5:
-                        uInput = "5";
+                  case 5:
+                       uInput = "5";
                         break;
 
                            
@@ -231,13 +233,106 @@ namespace Project
 
 
         {
+
+            string answer="0/";
+
             Console.WriteLine("Hello Is your Networking Issue Device Related Y or N");
+            answer = answer.ToLower();
+
+
+            if (answer.Contains("y"))
+            {
+
+
+                Console.WriteLine("Is The computer using wifi or network cable");
+
+
+
+
+
+            }
+
+
+
+            if (answer.Contains("n"))
+
+            {
+
+                string uInput;
+                Console.WriteLine("Is you Modem Pluged in");
+
+                Console.WriteLine("Yes:     1");
+                Console.WriteLine("No       2");
+
+
+
+                uInput = Console.ReadLine();
+                uInput = uInput.ToLower();
+
+
+
+
+                switch (uInput)
+                {
+
+                    case  "1":
+                        Console.WriteLine("Please Plug in The Modem");
+                        break;
+
+
+
+                    case "2":
+
+                        Console.WriteLine("Are their any deviced wired directly to the modem");
+                        Console.WriteLine("yes or no");
+                        uInput = Console.ReadLine();
+                        uInput = uInput.ToLower();
+
+
+                        break;
+
+                    case "yes":
+                        Console.WriteLine("Please Unplug all the Devices conected and restart the modem" );
+
+                        break;
+
+
+
+                    case "no":
+
+                        Console.WriteLine("Are Their an cables pluged into the modem");
+                        uInput = "1";
+
+
+
+
+                        break;
+
+
+
+                       
+
+
+                }
 
 
 
 
 
 
+
+
+
+            }
+
+        
+
+
+            else
+            {
+
+                Main();
+            }
 
 
 
@@ -302,7 +397,18 @@ namespace Project
 
         static void Unsure()
         {
-            string answer, answer2, answer3
+            string answer, answer2, answer3;
+
+            Console.WriteLine("Do you have a computer, phone or tablet that is not working correctly?");
+            answer = Console.ReadLine();
+            answer = answer.ToLower();
+
+            if (answer.Contains("y"))
+            {
+                Console.WriteLine("Is the issue:");
+                Console.WriteLine("1\tInvolving the interface of the device (such as to do with apps, settings, or functionality)");
+                Console.WriteLine();
+            }
         }
 
 
