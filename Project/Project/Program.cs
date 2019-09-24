@@ -72,7 +72,25 @@ namespace Project
             name = Console.ReadLine();
         }
 
+        static void Q3()
+        {
+            string answer, answer2, answer3;
+            Console.WriteLine("Are you having problems with your computers hardware?");
+            answer = Console.ReadLine();
+            answer = answer.ToLower();
 
+            if (answer.Contains("y"))
+            {
+                Console.WriteLine("Do you believe the problems are happening outside the computer (such as cables), or inside the computer? Or are you not sure?");
+                answer2 = Console.ReadLine();
+                answer2 = answer2.ToLower();
+
+               switch (answer2)
+                {
+
+                }
+            }
+        }
 
 
 
