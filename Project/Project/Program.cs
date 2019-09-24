@@ -205,11 +205,6 @@ namespace Project
             }
 
         }
-
-
-
-
-
         ////////////Seymours Zone\\\\\\\\\\\
 
 
@@ -291,27 +286,8 @@ namespace Project
 
 
                         break;
-
-
-
-
-
-
                 }
-
-
-
-
-
-
-
-
-
             }
-
-
-
-
             else
             {
 
@@ -320,10 +296,6 @@ namespace Project
 
             Console.ReadLine();
         }
-
-
-
-
         static void Unsure()
         {
             string answer, answer2, answer3;
@@ -360,106 +332,11 @@ namespace Project
             }
             Console.ReadLine();
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
         //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
         static void Hardware()
         {
-
-
-            /*string answer, answer2, answer3, answer4, answer5, answer6;
-            bool check = false;
-            Console.WriteLine("Are you having problems with your computers hardware?");
-            answer = Console.ReadLine();
-            answer = answer.ToLower();
-
-            if (answer.Contains("y"))
-            {
-                Console.WriteLine("Do you believe the problems are happening outside the computer (such as cables), or inside the computer? Or are you not sure?");
-                answer2 = Console.ReadLine();
-                answer2 = answer2.ToLower();
-
-                switch (answer2)
-                {
-                    case "cable":
-                    case "cables":
-                    case "outside":
-                        Console.WriteLine("Have you tried unplugging and replugging-in your cables?");
-                        answer3 = Console.ReadLine();
-                        answer3 = answer3.ToLower();
-                        if (answer3.Contains("y"))
-                        {
-                            Console.WriteLine("Are you sure you are having hardware problems?");
-                            answer4 = Console.ReadLine();
-                            answer4 = answer4.ToLower();
-
-                            if (answer4.Contains("y"))
-                            {
-                                Console.WriteLine("Are you sure it is cable related?");
-                                answer5 = Console.ReadLine();
-                                answer5 = answer5.ToLower();
-
-                                if (answer5.Contains("y"))
-                                {
-                                    Console.WriteLine("Have you ever had cable problems before?");
-                                    answer6 = Console.ReadLine();
-                                    answer6 = answer6.ToLower();
-
-                                    if (answer6.Contains("y"))
-                                    {
-                                        Console.WriteLine("It is possible that you have a problem with the cables and you may have to replace them.");
-                                        //change back to menu
-                                    }
-                                    else
-                                    {
-                                        Console.WriteLine("Make sure all cables are placed into the correct slot");
-                                        //change back to menu
-                                    }
-                                }
-                                else
-                                {
-                                    Console.WriteLine("Make sure all cables are placed into the correct slot");
-                                    //change back to menu
-                                }
-                            }
-                            else
-                            {
-                                check = true;
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine("Try unplugged and re-plugging your cables.");
-                            //change back to menu
-                        }
-                        break;
-                    case "inside":
-                    case "in":
-                        Console.WriteLine("");          //Nabeel do this
-                        break;
-                }
-                if (check == true)
-                {
-                    Console.WriteLine($"Last time I asked you that question you gave me a different answer, {name}. Please don't lie to me.");
-                    //change back to menu
-                }
-
-            }
-
-        }
-*/
-            string answer, ans2;
+            
+            string answer, ans2, ans3, ans4, ans5, ans6, ans7, ans8, anss, anss1, anss2, anss3, anss4;
             Console.WriteLine("Are you facing a Monitor issue Y or N?");
             answer = Console.ReadLine();
             answer = answer.ToLower();
@@ -487,7 +364,6 @@ namespace Project
             }
             else
             {
-                string ans3, ans4, ans5, ans6, ans7, ans8;
                 Console.WriteLine("Is your desktop shutting off randomly? Y or N");
                 ans3 = Console.ReadLine();
                 ans3 = ans3.ToLower();
@@ -542,7 +418,6 @@ namespace Project
                     }
                     else
                     {
-                        string anss, anss1, anss2, anss3, anss4;
                         bool check = false;
                         Console.WriteLine("Do you believe the problems are happening outside the computer (such as cables), or inside the computer? Or are you not sure?");
                         anss = Console.ReadLine();
