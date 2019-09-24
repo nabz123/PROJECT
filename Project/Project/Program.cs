@@ -453,7 +453,7 @@ namespace Project
 
 
 
->>>>>>> ef879e94158e500e684ec9c27c3cb54e86d36ae4
+
 
 
 
@@ -752,9 +752,9 @@ namespace Project
 
 
 
-<<<<<<< HEAD
+
                 //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-=======
+
 
         static void Device()   //Mobile devices and tablets
         {
@@ -901,7 +901,6 @@ namespace Project
 
         //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
->>>>>>> ef879e94158e500e684ec9c27c3cb54e86d36ae4
 
 
 
@@ -967,10 +966,11 @@ namespace Project
 
 
 
-<<<<<<< HEAD
+
+
 
         }
-=======
+
     }
->>>>>>> ef879e94158e500e684ec9c27c3cb54e86d36ae4
+
 }
