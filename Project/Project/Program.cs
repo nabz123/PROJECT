@@ -74,7 +74,8 @@ namespace Project
 
         static void Q3()
         {
-            string answer, answer2, answer3;
+            string answer, answer2, answer3, answer4, answer5;
+            bool check = false;
             Console.WriteLine("Are you having problems with your computers hardware?");
             answer = Console.ReadLine();
             answer = answer.ToLower();
@@ -93,6 +94,24 @@ namespace Project
                         Console.WriteLine("Have you tried unplugging and replugging-in your cables?");
                         answer3 = Console.ReadLine();
                         answer3 = answer3.ToLower();
+                        if (answer3.Contains("y"))
+                        {
+                            Console.WriteLine("Are you sure you are having hardware problems?");
+                            answer4 = Console.ReadLine();
+                            answer4 = answer4.ToLower();
+                            
+                            if (answer4.Contains("y"))
+                            {
+                                Console.WriteLine("Are you sure it is cable related?");
+                                answer5 = Console.ReadLine();
+                                answer5 = answer5.ToLower();
+
+                                if (answer5.Contains("y"))
+                                {
+
+                                }
+                            }
+                        }
                         break;
                     case "inside":
                     case "in":
