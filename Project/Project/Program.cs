@@ -645,68 +645,71 @@ namespace Project
 
         }
 
-                //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-
-        static void Device()   //Mobile devices and tablets
-        {
-            string answer, answer2, answer3, answer4;
-            Console.WriteLine("Are you using a phone or a tablet?");
-            answer = Console.ReadLine();
-            answer.ToLower();
-            if (answer == "phone")
-            {
-                Console.WriteLine("Is it an Android or an apple product?");
-                answer2 = Console.ReadLine();
-                answer2.ToLower();
-                if (answer2 == "apple")
-                {
-                    Console.WriteLine("How old is your product?");
-                    answer4 = Console.ReadLine();
-                    answer4.ToLower();
-
-                    
-                }
-                if (answer2 == "android")
-                {
-
-                }
+            //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
             
-            }
-            else if (answer == "tablet")
+
+
+            //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+            static void Device()   //Mobile devices and tablets
             {
-                Console.WriteLine("Is it an Android or an apple product?");
-                answer3 = Console.ReadLine();
-                answer3.ToLower();
-                if (answer3 == "apple")
+                string answer, answer2, answer3, answer4;
+                Console.WriteLine("Are you using a phone or a tablet?");
+                answer = Console.ReadLine();
+                answer.ToLower();
+                if (answer == "phone")
                 {
+                    Console.WriteLine("Is it an Android or an apple product?");
+                    answer2 = Console.ReadLine();
+                    answer2.ToLower();
+                    if (answer2 == "apple")
+                    {
+                        Console.WriteLine("How old is your product?");
+                        answer4 = Console.ReadLine();
+                        answer4.ToLower();
 
-                }
-                if (answer3 == "android")
-                {
 
-                }
-
-            }
-            else
-            {
-                Console.WriteLine("");
-                //call for switch
-            }
         }
 
 
+                    }
+                    if (answer2 == "android")
+                    {
+
+                //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
+                    }
 
+                }
+                else if (answer == "tablet")
+                {
+                    Console.WriteLine("Is it an Android or an apple product?");
+                    answer3 = Console.ReadLine();
+                    answer3.ToLower();
+                    if (answer3 == "apple")
+                    {
 
+                    }
+                    if (answer3 == "android")
+                    {
 
+                    }
 
+                }
+                else
+                {
+                    Console.WriteLine("");
+                    //call for switch
+                }
+            }
 
+            //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    }
 
-
-
+}
 
 
 
@@ -864,5 +867,6 @@ namespace Project
         }
 
     }
+
 
 
