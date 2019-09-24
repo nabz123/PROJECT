@@ -39,7 +39,7 @@ namespace Project
                         Hardware();
                         break;
                     case 4:
-                        
+                        Device();
                         break;
                     case 5:
                         Unsure();
