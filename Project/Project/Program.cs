@@ -47,7 +47,6 @@ namespace Project
 
 
 
-
                 } while (input != 0);
 
 
@@ -391,6 +390,20 @@ namespace Project
         static void Unsure()
         {
             string answer, answer2, answer3;
+<<<<<<< HEAD
+=======
+
+            Console.WriteLine("Do you have a computer, phone or tablet that is not working correctly?");
+            answer = Console.ReadLine();
+            answer = answer.ToLower();
+
+            if (answer.Contains("y"))
+            {
+                Console.WriteLine("Is the issue:");
+                Console.WriteLine("1\tInvolving the interface of the device (such as to do with apps, settings, or functionality)");
+                Console.WriteLine();
+            }
+>>>>>>> e1e0f9de2b2403124cd1f352ace143812e19c9a1
         }
 
 
@@ -651,9 +664,9 @@ namespace Project
 
 
 
-        static void Q4 ()    //Mobile devices and tablets
+        static void Device()   //Mobile devices and tablets
         {
-            string answer, answer2, answer3;
+            string answer, answer2, answer3, answer4;
             Console.WriteLine("Are you using a phone or a tablet?");
             answer = Console.ReadLine();
             answer.ToLower();
@@ -664,7 +677,11 @@ namespace Project
                 answer2.ToLower();
                 if (answer2 == "apple")
                 {
-                    //call for switch 
+                    Console.WriteLine("How old is your product?");
+                    answer4 = Console.ReadLine();
+                    answer4.ToLower();
+
+                    
                 }
                 if (answer2 == "android")
                 {
@@ -678,6 +695,10 @@ namespace Project
                 answer3 = Console.ReadLine();
                 answer3.ToLower();
                 if (answer3 == "apple")
+                {
+
+                }
+                if (answer3 == "android")
                 {
 
                 }
