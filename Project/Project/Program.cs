@@ -8,12 +8,18 @@ namespace Project
         public static string name;
         static void Main()
         {
-            int input;
+            int input, count = 0;
+
+            while (count!=1)
+            {
+                UserName();
+                count++;
+            }
 
             do
             {
                 Console.Clear();
-                Console.WriteLine("Welcome to The Menu");
+                Console.WriteLine($"Welcome to The Menu, {name}");
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine("1\tNetworking");
@@ -22,6 +28,8 @@ namespace Project
                 Console.WriteLine("4\tPhone/Tablet");
                 Console.WriteLine("5\tUnsure");
                 Console.WriteLine("0\tExit");
+                Console.WriteLine("\n\n\n\n");
+                Console.WriteLine("Please pick a number:");
                 input = Convert.ToInt32(Console.ReadLine());
 
                 Console.Clear();
@@ -104,6 +112,7 @@ namespace Project
                 Console.WriteLine("It is important to install an antivirus software on your computer");
                 //call for switch
             }
+            Console.ReadLine();
         }
 
         public static string UserName()
@@ -296,7 +305,7 @@ namespace Project
 
 
 
-
+               
             }
 
 
@@ -308,8 +317,7 @@ namespace Project
                 Main();
             }
 
-
-
+            Console.ReadLine();
         }
 
 
@@ -349,7 +357,7 @@ namespace Project
                         break;
                 }
             }
-
+            Console.ReadLine();
         }
 
 
@@ -449,7 +457,7 @@ namespace Project
 
                 }
             }
-
+            Console.ReadLine();
         }
 
         //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -511,7 +519,7 @@ namespace Project
                 Console.WriteLine("");
                 //call for switch
             }
-
+            Console.ReadLine();
         }
     }
 }
