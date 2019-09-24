@@ -66,10 +66,11 @@ namespace Project
             }
         }
 
-        static void UserName()
+        public static string UserName()
         {
             Console.WriteLine("What is your name?");
             name = Console.ReadLine();
+            return name;
         }
 
         static void Q3()
