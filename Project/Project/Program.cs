@@ -138,7 +138,7 @@ namespace Project
 
         static void Q3()
         {
-            string answer, answer2, answer3, answer4, answer5;
+            string answer, answer2, answer3, answer4, answer5, answer6;
             bool check = false;
             Console.WriteLine("Are you having problems with your computers hardware?");
             answer = Console.ReadLine();
@@ -172,17 +172,51 @@ namespace Project
 
                                 if (answer5.Contains("y"))
                                 {
+                                    Console.WriteLine("Have you ever had cable problems before?");
+                                    answer6 = Console.ReadLine();
+                                    answer6 = answer6.ToLower();
 
+                                    if (answer6.Contains("y"))
+                                    {
+                                        Console.WriteLine("It is possible that you have a problem with the cables and you may have to replace them.");
+                                        //change back to menu
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Make sure all cables are placed into the correct slot");
+                                        //change back to menu
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Make sure all cables are placed into the correct slot");
+                                    //change back to menu
                                 }
                             }
+                            else
+                            {
+                                check = true;
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Try unplugged and re-plugging your cables.");
+                            //change back to menu
                         }
                         break;
                     case "inside":
                     case "in":
-                        Console.WriteLine("");
+                        Console.WriteLine("");          //Nabeel do this
                         break;
                 }
+                if (check == true)
+                {
+                    Console.WriteLine($"Last time I asked you that question you gave me a different answer, {name}. Please don't lie to me.");
+                    //change back to menu
+                }
+
             }
+
         }
 
 
