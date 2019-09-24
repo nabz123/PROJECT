@@ -5,10 +5,67 @@ namespace Project
 {
     class Project1
     {
-        static string name;
+        public static string name;
         static void Main()
         {
-            //use main to test
+
+
+
+                int input = 1;
+
+
+
+                do
+                {
+                    Console.Clear();
+                    Console.WriteLine("Welcome to The Menu");
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.WriteLine("Networking");
+                    Console.WriteLine("Option 2");
+                    Console.WriteLine("Option 3");
+                    Console.WriteLine("Option 4");
+                    Console.WriteLine("Option 5");
+                    Console.WriteLine("Close");
+                    input = Convert.ToInt16(Console.ReadLine());
+
+                    Console.Clear();
+
+
+                    switch (input)
+                    {
+                        case 1:
+                            Networking();
+                            break;
+
+
+
+                  
+                    }
+
+
+
+
+
+                } while (input != 0);
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
         }
 
         static void QSwitch()   //add all questions into here that don't have follow up questions and we will put them into a switch later
@@ -66,15 +123,17 @@ namespace Project
             }
         }
 
-        static void UserName()
+        public static string UserName()
         {
             Console.WriteLine("What is your name?");
             name = Console.ReadLine();
+            return name;
         }
 
         static void Q3()
         {
-            string answer, answer2, answer3;
+            string answer, answer2, answer3, answer4, answer5, answer6;
+            bool check = false;
             Console.WriteLine("Are you having problems with your computers hardware?");
             answer = Console.ReadLine();
             answer = answer.ToLower();
@@ -93,19 +152,160 @@ namespace Project
                         Console.WriteLine("Have you tried unplugging and replugging-in your cables?");
                         answer3 = Console.ReadLine();
                         answer3 = answer3.ToLower();
+                        if (answer3.Contains("y"))
+                        {
+                            Console.WriteLine("Are you sure you are having hardware problems?");
+                            answer4 = Console.ReadLine();
+                            answer4 = answer4.ToLower();
+                            
+                            if (answer4.Contains("y"))
+                            {
+                                Console.WriteLine("Are you sure it is cable related?");
+                                answer5 = Console.ReadLine();
+                                answer5 = answer5.ToLower();
+
+                                if (answer5.Contains("y"))
+                                {
+                                    Console.WriteLine("Have you ever had cable problems before?");
+                                    answer6 = Console.ReadLine();
+                                    answer6 = answer6.ToLower();
+
+                                    if (answer6.Contains("y"))
+                                    {
+                                        Console.WriteLine("It is possible that you have a problem with the cables and you may have to replace them.");
+                                        //change back to menu
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Make sure all cables are placed into the correct slot");
+                                        //change back to menu
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Make sure all cables are placed into the correct slot");
+                                    //change back to menu
+                                }
+                            }
+                            else
+                            {
+                                check = true;
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Try unplugged and re-plugging your cables.");
+                            //change back to menu
+                        }
                         break;
                     case "inside":
                     case "in":
-                        Console.WriteLine("");
+                        Console.WriteLine("");          //Nabeel do this
                         break;
                 }
+                if (check == true)
+                {
+                    Console.WriteLine($"Last time I asked you that question you gave me a different answer, {name}. Please don't lie to me.");
+                    //change back to menu
+                }
+
             }
+
         }
 
 
 
 
 
+        ////////////Seymours Zone\\\\\\\\\\\
+        ///
+
+
+        public static void Networking()
+
+
+        {
+
+            string answer="0/";
+
+            Console.WriteLine("Hello Is your Networking Issue Device Related Y or N");
+            answer = answer.ToLower();
+
+
+            if (answer.Contains("y"))
+            {
+
+
+                Console.WriteLine("Is The computer using wifi or network cable");
+
+
+
+
+
+            }
+
+
+
+            if (answer.Contains("n"))
+
+            {
+
+                string uInput;
+                Console.WriteLine("Is you Modem Pluged in");
+
+                Console.WriteLine("Yes:     1");
+                Console.WriteLine("No       2");
+
+
+
+                uInput = Console.ReadLine();
+                uInput = uInput.ToLower();
+
+
+
+
+                switch (uInput)
+                {
+
+                    case  "1":
+                        Console.WriteLine("Please Plug in The Modem");
+                        break;
+
+
+
+                    case "2":
+
+                        Console.WriteLine("Are their any deviced wired directly to the modem");
+                        Console.WriteLine("yes or no");
+                        uInput = Console.ReadLine();
+                        uInput = uInput.ToLower();
+
+
+                        break;
+
+                    case "yes":
+                        Console.WriteLine("Please Unplug all the Devices conected and restart the modem" );
+
+                        break;
+
+
+
+                    case "no":
+
+                        Console.WriteLine("Are Their an cables pluged into the modem");
+                        uInput = "1";
+
+
+
+
+                        break;
+
+
+
+                       
+
+
+                }
 
 
 
@@ -115,44 +315,16 @@ namespace Project
 
 
 
+            }
+
+        
 
 
+            else
+            {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                Main();
+            }
 
 
 
@@ -181,6 +353,120 @@ namespace Project
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        static void Unsure()
+        {
+            string answer, answer2, answer3;
+
+
+            Console.WriteLine("Do you have a computer, phone or tablet that is not working correctly?");
+            answer = Console.ReadLine();
+            answer = answer.ToLower();
+
+            if (answer.Contains("y"))
+            {
+                Console.WriteLine("Is the issue:");
+                Console.WriteLine("1\tInvolving the interface of the device (such as to do with apps, settings, or functionality)");
+                Console.WriteLine();
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> ef879e94158e500e684ec9c27c3cb54e86d36ae4
+
+
+
+
+
+
+
+
+
+
+
+        //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
@@ -357,9 +643,9 @@ namespace Project
             
 
 
-            //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-            //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
+        //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
@@ -458,19 +744,64 @@ namespace Project
 
 
 
+        //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
 
 
 
+<<<<<<< HEAD
                 //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+=======
 
+        static void Device()   //Mobile devices and tablets
+        {
+            string answer, answer2, answer3, answer4;
+            Console.WriteLine("Are you using a phone or a tablet?");
+            answer = Console.ReadLine();
+            answer.ToLower();
+            if (answer == "phone")
+            {
+                Console.WriteLine("Is it an Android or an apple product?");
+                answer2 = Console.ReadLine();
+                answer2.ToLower();
+                if (answer2 == "apple")
+                {
+                    Console.WriteLine("How old is your product?");
+                    answer4 = Console.ReadLine();
+                    answer4.ToLower();
 
+                    
+                }
+                if (answer2 == "android")
+                {
 
+                }
+            
+            }
+            else if (answer == "tablet")
+            {
+                Console.WriteLine("Is it an Android or an apple product?");
+                answer3 = Console.ReadLine();
+                answer3.ToLower();
+                if (answer3 == "apple")
+                {
 
+                }
+                if (answer3 == "android")
+                {
 
+                }
 
+            }
+            else
+            {
+                Console.WriteLine("");
+                //call for switch
+            }
+        }
 
 
 
@@ -530,6 +861,116 @@ namespace Project
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+>>>>>>> ef879e94158e500e684ec9c27c3cb54e86d36ae4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<<<<<<< HEAD
 
         }
+=======
+    }
+>>>>>>> ef879e94158e500e684ec9c27c3cb54e86d36ae4
 }
