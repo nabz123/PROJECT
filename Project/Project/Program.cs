@@ -563,9 +563,9 @@ namespace Project
 
 
 
-        static void Q4 ()    //Mobile devices and tablets
+        static void Device()   //Mobile devices and tablets
         {
-            string answer, answer2, answer3;
+            string answer, answer2, answer3, answer4;
             Console.WriteLine("Are you using a phone or a tablet?");
             answer = Console.ReadLine();
             answer.ToLower();
@@ -576,7 +576,11 @@ namespace Project
                 answer2.ToLower();
                 if (answer2 == "apple")
                 {
-                    //call for switch 
+                    Console.WriteLine("How old is your product?");
+                    answer4 = Console.ReadLine();
+                    answer4.ToLower();
+
+                    
                 }
                 if (answer2 == "android")
                 {
@@ -590,6 +594,10 @@ namespace Project
                 answer3 = Console.ReadLine();
                 answer3.ToLower();
                 if (answer3 == "apple")
+                {
+
+                }
+                if (answer3 == "android")
                 {
 
                 }
