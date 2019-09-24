@@ -188,8 +188,8 @@ namespace Project
 
 
 
-            //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-            //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
@@ -288,8 +288,8 @@ namespace Project
 
 
 
-            //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-            //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
@@ -388,8 +388,8 @@ namespace Project
 
 
 
-            //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-            //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
@@ -397,9 +397,44 @@ namespace Project
 
 
 
+        static void Q4 ()    //Mobile devices and tablets
+        {
+            string answer, answer2, answer3;
+            Console.WriteLine("Are you using a phone or a tablet?");
+            answer = Console.ReadLine();
+            answer.ToLower();
+            if (answer == "phone")
+            {
+                Console.WriteLine("Is it an Android or an apple product?");
+                answer2 = Console.ReadLine();
+                answer2.ToLower();
+                if (answer2 == "apple")
+                {
+                    //call for switch 
+                }
+                if (answer2 == "android")
+                {
 
+                }
+            
+            }
+            else if (answer == "tablet")
+            {
+                Console.WriteLine("Is it an Android or an apple product?");
+                answer3 = Console.ReadLine();
+                answer3.ToLower();
+                if (answer3 == "apple")
+                {
 
+                }
 
+            }
+            else
+            {
+                Console.WriteLine("");
+                //call for switch
+            }
+        }
 
 
 
@@ -495,9 +530,9 @@ namespace Project
 
 
 
-            //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
+        //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
@@ -561,6 +596,8 @@ namespace Project
 
 
 
-        
+
+
+
     }
 }
