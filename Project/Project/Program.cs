@@ -8,23 +8,23 @@ namespace Project
         public static string name;
         static void Main()
         {
-                int input;
+            int input;
 
-                do
-                {
-                    Console.Clear();
-                    Console.WriteLine("Welcome to The Menu");
-                    Console.WriteLine();
-                    Console.WriteLine();
-                    Console.WriteLine("1\tNetworking");
-                    Console.WriteLine("2\tSoftware");
-                    Console.WriteLine("3\tHardware");
-                    Console.WriteLine("4\tPhone/Tablet");
-                    Console.WriteLine("5\tUnsure");
-                    Console.WriteLine("0\tExit");
-                    input = Convert.ToInt32(Console.ReadLine());
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Welcome to The Menu");
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("1\tNetworking");
+                Console.WriteLine("2\tSoftware");
+                Console.WriteLine("3\tHardware");
+                Console.WriteLine("4\tPhone/Tablet");
+                Console.WriteLine("5\tUnsure");
+                Console.WriteLine("0\tExit");
+                input = Convert.ToInt32(Console.ReadLine());
 
-                    Console.Clear();
+                Console.Clear();
 
 
                 switch (input)
@@ -47,7 +47,7 @@ namespace Project
                     default:
                         break;
                 }
-                } while (input != 0);
+            } while (input != 0);
             Console.ReadLine();
         }
 
@@ -127,7 +127,7 @@ namespace Project
                 answer2 = Console.ReadLine();
                 answer2 = answer2.ToLower();
 
-               switch (answer2)
+                switch (answer2)
                 {
                     case "cable":
                     case "cables":
@@ -140,7 +140,7 @@ namespace Project
                             Console.WriteLine("Are you sure you are having hardware problems?");
                             answer4 = Console.ReadLine();
                             answer4 = answer4.ToLower();
-                            
+
                             if (answer4.Contains("y"))
                             {
                                 Console.WriteLine("Are you sure it is cable related?");
@@ -201,7 +201,6 @@ namespace Project
 
 
         ////////////Seymours Zone\\\\\\\\\\\
-        ///
 
 
         public static void Networking()
@@ -209,7 +208,7 @@ namespace Project
 
         {
 
-            string answer="0/";
+            string answer = "0/";
 
             Console.WriteLine("Hello Is your Networking Issue Device Related Y or N");
             answer = answer.ToLower();
@@ -250,7 +249,7 @@ namespace Project
                 switch (uInput)
                 {
 
-                    case  "1":
+                    case "1":
                         Console.WriteLine("Please Plug in The Modem");
                         break;
 
@@ -267,7 +266,7 @@ namespace Project
                         break;
 
                     case "yes":
-                        Console.WriteLine("Please Unplug all the Devices conected and restart the modem" );
+                        Console.WriteLine("Please Unplug all the Devices conected and restart the modem");
 
                         break;
 
@@ -285,7 +284,7 @@ namespace Project
 
 
 
-                       
+
 
 
                 }
@@ -300,7 +299,7 @@ namespace Project
 
             }
 
-        
+
 
 
             else
@@ -311,71 +310,7 @@ namespace Project
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-        //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -429,134 +364,6 @@ namespace Project
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-        //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
         //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
         static void Hardware()
         {
@@ -645,228 +452,66 @@ namespace Project
 
         }
 
-            //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-            
-
-
-            //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-
-            static void Device()   //Mobile devices and tablets
-            {
-                string answer, answer2, answer3, answer4;
-                Console.WriteLine("Are you using a phone or a tablet?");
-                answer = Console.ReadLine();
-                answer.ToLower();
-                if (answer == "phone")
-                {
-                    Console.WriteLine("Is it an Android or an apple product?");
-                    answer2 = Console.ReadLine();
-                    answer2.ToLower();
-                    if (answer2 == "apple")
-                    {
-                        Console.WriteLine("How old is your product?");
-                        answer4 = Console.ReadLine();
-                        answer4.ToLower();
-
-
-        }
-
-
-                    }
-                    if (answer2 == "android")
-                    {
-
-                //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-
-
-                    }
-
-                }
-                else if (answer == "tablet")
-                {
-                    Console.WriteLine("Is it an Android or an apple product?");
-                    answer3 = Console.ReadLine();
-                    answer3.ToLower();
-                    if (answer3 == "apple")
-                    {
-
-                    }
-                    if (answer3 == "android")
-                    {
-
-                    }
-
-                }
-                else
-                {
-                    Console.WriteLine("");
-                    //call for switch
-                }
-            }
-
-            //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
         //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
+        static void Device()   //Mobile devices and tablets
+        {
+            string answer, answer2, answer3, answer4;
+            Console.WriteLine("Are you using a phone or a tablet?");
+            answer = Console.ReadLine();
+            answer.ToLower();
+            if (answer == "phone")
+            {
+                Console.WriteLine("Is it an Android or an apple product?");
+                answer2 = Console.ReadLine();
+                answer2.ToLower();
+                if (answer2 == "apple")
+                {
+                    Console.WriteLine("How old is your product?");
+                    answer4 = Console.ReadLine();
+                    answer4.ToLower();
 
 
 
 
 
+                }
+                if (answer2 == "android")
+                {
 
+                   
 
 
 
+                }
 
+            }
+            else if (answer == "tablet")
+            {
+                Console.WriteLine("Is it an Android or an apple product?");
+                answer3 = Console.ReadLine();
+                answer3.ToLower();
+                if (answer3 == "apple")
+                {
 
+                }
+                if (answer3 == "android")
+                {
 
+                }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            }
+            else
+            {
+                Console.WriteLine("");
+                //call for switch
+            }
 
         }
-
     }
-
-
-
+}
