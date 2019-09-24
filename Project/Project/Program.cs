@@ -41,7 +41,7 @@ namespace Project
 
                     case 4:
 
-                        Dontknow();
+                        Unsure();
                         break;
 
                     case 5:
@@ -302,7 +302,18 @@ namespace Project
 
         static void Unsure()
         {
-            string answer, answer2, answer3
+            string answer, answer2, answer3;
+
+            Console.WriteLine("Do you have a computer, phone or tablet that is not working correctly?");
+            answer = Console.ReadLine();
+            answer = answer.ToLower();
+
+            if (answer.Contains("y"))
+            {
+                Console.WriteLine("Is the issue:");
+                Console.WriteLine("1\tInvolving the interface of the device (such as to do with apps, settings, or functionality)");
+                Console.WriteLine();
+            }
         }
 
 
