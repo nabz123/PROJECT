@@ -418,7 +418,7 @@ namespace Project
             }
             else
             {
-                string ans3, ans4, ans5, ans6;
+                string ans3, ans4, ans5, ans6,ans7,ans8;
                 Console.WriteLine("Is your DESKTOP shtting off randomly? Y or N");
                 ans3 = Console.ReadLine();
                 ans3 = ans3.ToLower();
@@ -445,8 +445,33 @@ namespace Project
                     ans5 = Console.ReadLine();
                     ans5 = ans5.ToLower();
                     if (ans5.Contains("y"))
+                    {
                         Console.WriteLine("Do you bleive this is related to having many programs running or you don't have anymore storage remianing? Or are you not sure");
+                        ans6 = Console.ReadLine();
+                        ans6 = ans6.ToLower();
 
+                        switch(ans6)
+                        {
+                            case "slow":
+                            case "freezing":
+                                Console.WriteLine("Have you checked the Task Manger for your Memory usage? Y or N");
+                                ans7 = Console.ReadLine();
+                                ans7 = ans7.ToLower();
+                                if (ans6.Contains("n"))
+                                {
+                                    Console.WriteLine("Have you check your avialable on storage on your device Y or N");
+                                    ans8 = Console.ReadLine();
+                                    ans8 = ans8.ToLower();
+                                    Console.WriteLine("Have you deleted the temp files?");
+                                }
+                                    
+                                break;
+                             
+                        }
+                    }
+
+                        
+                    
                 }
             }
 
