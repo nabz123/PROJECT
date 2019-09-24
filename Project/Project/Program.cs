@@ -8,7 +8,70 @@ namespace Project
         public static string name;
         static void Main()
         {
-            //use main to test
+            string uInput;
+            int input;
+            do
+            {
+
+                Console.WriteLine("Hardware                 1");
+                Console.WriteLine("Networking/Internet      2");
+                Console.WriteLine("Device/Phone/Tablet       3");
+                Console.WriteLine("I dont know              4");
+                Console.WriteLine("Close                    5");
+                input = Convert.ToInt32(Console.ReadLine());
+
+
+                switch (input)
+                {
+
+                    case 1:
+                        Hardware();
+                            break;
+
+                    case 2:
+                        Networking();
+
+                        break;
+
+
+                    case 3:
+
+                        Device();
+                        break;
+
+                    case 4:
+
+                        Dontknow();
+                        break;
+
+                    case 5:
+                        uInput = "5";
+                        break;
+
+                           
+                        
+
+
+
+
+
+                }
+
+
+
+
+            } while (uInput != "5");
+
+
+
+
+
+
+
+
+
+
+
         }
 
         static void QSwitch()   //add all questions into here that don't have follow up questions and we will put them into a switch later
@@ -75,7 +138,7 @@ namespace Project
 
         static void Q3()
         {
-            string answer, answer2, answer3, answer4, answer5;
+            string answer, answer2, answer3, answer4, answer5, answer6;
             bool check = false;
             Console.WriteLine("Are you having problems with your computers hardware?");
             answer = Console.ReadLine();
@@ -109,17 +172,123 @@ namespace Project
 
                                 if (answer5.Contains("y"))
                                 {
+                                    Console.WriteLine("Have you ever had cable problems before?");
+                                    answer6 = Console.ReadLine();
+                                    answer6 = answer6.ToLower();
 
+                                    if (answer6.Contains("y"))
+                                    {
+                                        Console.WriteLine("It is possible that you have a problem with the cables and you may have to replace them.");
+                                        //change back to menu
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Make sure all cables are placed into the correct slot");
+                                        //change back to menu
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Make sure all cables are placed into the correct slot");
+                                    //change back to menu
                                 }
                             }
+                            else
+                            {
+                                check = true;
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Try unplugged and re-plugging your cables.");
+                            //change back to menu
                         }
                         break;
                     case "inside":
                     case "in":
-                        Console.WriteLine("");
+                        Console.WriteLine("");          //Nabeel do this
                         break;
                 }
+                if (check == true)
+                {
+                    Console.WriteLine($"Last time I asked you that question you gave me a different answer, {name}. Please don't lie to me.");
+                    //change back to menu
+                }
+
             }
+
+        }
+
+
+
+
+
+        ////////////Seymours Zone\\\\\\\\\\\
+        ///
+
+
+        static void Networking()
+
+
+        {
+            Console.WriteLine("Hello Is your Networking Issue Device Related Y or N");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
 
 
@@ -131,13 +300,10 @@ namespace Project
 
 
 
-
-
-
-
-
-
-
+        static void Unsure()
+        {
+            string answer, answer2, answer3
+        }
 
 
 
