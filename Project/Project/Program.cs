@@ -581,7 +581,7 @@ namespace Project
                         break;
                 }
             }*/
-            string answer,ans2;
+            string answer, ans2;
             Console.WriteLine("Are you facing a Monitor issue Y or N?");
             answer = Console.ReadLine();
             answer = answer.ToLower();
@@ -609,7 +609,7 @@ namespace Project
             }
             else
             {
-                string ans3, ans4,ans5,ans6;
+                string ans3, ans4, ans5, ans6;
                 Console.WriteLine("Is your DESKTOP shtting off randomly? Y or N");
                 ans3 = Console.ReadLine();
                 ans3 = ans3.ToLower();
@@ -640,6 +640,7 @@ namespace Project
 
                 }
             }
+        }
             
 
 
@@ -752,13 +753,12 @@ namespace Project
 
 
 
-<<<<<<< HEAD
-                //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-=======
+
 
         static void Device()   //Mobile devices and tablets
         {
             string answer, answer2, answer3, answer4;
+            int deviceAge;
             Console.WriteLine("Are you using a phone or a tablet?");
             answer = Console.ReadLine();
             answer.ToLower();
@@ -801,7 +801,31 @@ namespace Project
                 Console.WriteLine("");
                 //call for switch
             }
+
+            /*
+             * Battery Life?
+             * Does it fully charge?
+             * How often do you charge it?
+             * How often do you use it?
+             * Any issues with apps crashing?
+             * Are all of your apps up to date
+             * is your devices software up to date
+             * Do you have applications running
+             * What make is the device
+             * Do you have enough storage/memory
+             */
+             
+            
+
+
+
+
+
+
         }
+        
+          
+        
 
 
 
