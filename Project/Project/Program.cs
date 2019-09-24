@@ -87,7 +87,17 @@ namespace Project
 
                switch (answer2)
                 {
-
+                    case "cable":
+                    case "cables":
+                    case "outside":
+                        Console.WriteLine("Have you tried unplugging and replugging-in your cables?");
+                        answer3 = Console.ReadLine();
+                        answer3 = answer3.ToLower();
+                        break;
+                    case "inside":
+                    case "in":
+                        Console.WriteLine("");
+                        break;
                 }
             }
         }
