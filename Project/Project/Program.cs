@@ -168,8 +168,8 @@ namespace Project
 
 
 
-            //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-            //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
@@ -268,104 +268,93 @@ namespace Project
 
 
 
-            //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-            //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        static void Hardware()
+        {
+
+
+            /*if (answer.Contains("y"))
+            {
+                Console.WriteLine("Do you believe the problems are happening outside the computer (such as cables), or inside the computer? Or are you not sure?");
+                answer2 = Console.ReadLine();
+                answer2 = answer2.ToLower();
+
+                switch (answer2)
+                {
+                    case "cable":
+                    case "cables":
+                    case "outside":
+                        Console.WriteLine("Have you tried unplugging and replugging-in your cables?");
+                        answer3 = Console.ReadLine();
+                        answer3 = answer3.ToLower();
+                        break;
+                    case "inside":
+                    case "in":
+                        Console.WriteLine("");
+                        break;
+                }
+            }*/
+            string answer,ans2;
+            Console.WriteLine("Are you facing a Monitor issue Y or N?");
+            answer = Console.ReadLine();
+            answer = answer.ToLower();
+
+            if (answer.Contains("y"))
+            {
+                Console.WriteLine("Do you believe this porblem is related to something such as cables? Or are you not sure?");
+                ans2 = Console.ReadLine();
+                ans2 = ans2.ToLower();
+
+                switch (ans2)
+                {
+                    case "cables":
+                    case "cable":
+                        Console.WriteLine("Have you tried unplugging and replugging in your cables?");
+                        break;
+                    case "display":
+                    case "light":
+                    case "black screen":
+                    case "blank screen":
+                        Console.WriteLine("Is your device connect proplerly?");
+                        break;
+
+                }
+            }
+            else
+            {
+                string ans3, ans4,ans5,ans6;
+                Console.WriteLine("Is your DESKTOP shtting off randomly? Y or N");
+                ans3 = Console.ReadLine();
+                ans3 = ans3.ToLower();
+                if (ans3.Contains("y"))
+                {
+                    Console.WriteLine("Do ypu blieve this is a RAM or cables issue? Or are you not sure??");
+                    ans4 = Console.ReadLine();
+                    ans4 = ans4.ToLower();
+
+                    switch (ans4)
+                    {
+                        case "cable":
+                        case "cables":
+                            Console.WriteLine("Is the cable loose? If so try pushing in?");
+                            break;
+                        case "RAM":
+                            Console.WriteLine("If on a desktop have you tried push it in to place?");
+                            break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Is your computer slow? Y or N");
+                    ans5 = Console.ReadLine();
+                    ans5 = ans5.ToLower();
+                    if (ans5.Contains("y"))
+                        Console.WriteLine("Do you bleive this is related to having many programs running or you don't have anymore storage remianing? Or are you not sure");
+
+                }
+            }
+            
 
 
             //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -475,7 +464,7 @@ namespace Project
 
 
 
-            //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
@@ -541,6 +530,6 @@ namespace Project
 
 
 
-        
-    }
+
+        }
 }
