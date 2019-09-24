@@ -106,7 +106,72 @@ namespace Project
 
 
 
+        ////////////Seymours Zone\\\\\\\\\\\
+        ///
 
+
+        static void Networking()
+
+
+        {
+            Console.WriteLine("Hello Is your Networking Issue Device Related Y or N");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
 
 
 
