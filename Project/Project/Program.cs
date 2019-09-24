@@ -236,7 +236,10 @@ namespace Project
 
 
 
-
+        static void Unsure()
+        {
+            string answer, answer2, answer3
+        }
 
 
 
