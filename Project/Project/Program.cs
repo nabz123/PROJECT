@@ -453,7 +453,7 @@ namespace Project
 
 
 
->>>>>>> ef879e94158e500e684ec9c27c3cb54e86d36ae4
+
 
 
 
@@ -581,7 +581,7 @@ namespace Project
                         break;
                 }
             }*/
-            string answer,ans2;
+            string answer, ans2;
             Console.WriteLine("Are you facing a Monitor issue Y or N?");
             answer = Console.ReadLine();
             answer = answer.ToLower();
@@ -609,7 +609,7 @@ namespace Project
             }
             else
             {
-                string ans3, ans4,ans5,ans6;
+                string ans3, ans4, ans5, ans6;
                 Console.WriteLine("Is your DESKTOP shtting off randomly? Y or N");
                 ans3 = Console.ReadLine();
                 ans3 = ans3.ToLower();
@@ -640,337 +640,63 @@ namespace Project
 
                 }
             }
+        }
+
+            //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
             
 
 
+            //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-        //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-        //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-        //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-
-
-
-
-
-<<<<<<< HEAD
-                //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-=======
-
-        static void Device()   //Mobile devices and tablets
-        {
-            string answer, answer2, answer3, answer4;
-            Console.WriteLine("Are you using a phone or a tablet?");
-            answer = Console.ReadLine();
-            answer.ToLower();
-            if (answer == "phone")
+            static void Device()   //Mobile devices and tablets
             {
-                Console.WriteLine("Is it an Android or an apple product?");
-                answer2 = Console.ReadLine();
-                answer2.ToLower();
-                if (answer2 == "apple")
+                string answer, answer2, answer3, answer4;
+                Console.WriteLine("Are you using a phone or a tablet?");
+                answer = Console.ReadLine();
+                answer.ToLower();
+                if (answer == "phone")
                 {
-                    Console.WriteLine("How old is your product?");
-                    answer4 = Console.ReadLine();
-                    answer4.ToLower();
+                    Console.WriteLine("Is it an Android or an apple product?");
+                    answer2 = Console.ReadLine();
+                    answer2.ToLower();
+                    if (answer2 == "apple")
+                    {
+                        Console.WriteLine("How old is your product?");
+                        answer4 = Console.ReadLine();
+                        answer4.ToLower();
 
-                    
+
+                    }
+                    if (answer2 == "android")
+                    {
+
+                    }
+
                 }
-                if (answer2 == "android")
+                else if (answer == "tablet")
                 {
+                    Console.WriteLine("Is it an Android or an apple product?");
+                    answer3 = Console.ReadLine();
+                    answer3.ToLower();
+                    if (answer3 == "apple")
+                    {
+
+                    }
+                    if (answer3 == "android")
+                    {
+
+                    }
 
                 }
-            
+                else
+                {
+                    Console.WriteLine("");
+                    //call for switch
+                }
             }
-            else if (answer == "tablet")
-            {
-                Console.WriteLine("Is it an Android or an apple product?");
-                answer3 = Console.ReadLine();
-                answer3.ToLower();
-                if (answer3 == "apple")
-                {
 
-                }
-                if (answer3 == "android")
-                {
-
-                }
-
-            }
-            else
-            {
-                Console.WriteLine("");
-                //call for switch
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
->>>>>>> ef879e94158e500e684ec9c27c3cb54e86d36ae4
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-
-        }
-=======
+            //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
     }
->>>>>>> ef879e94158e500e684ec9c27c3cb54e86d36ae4
+
 }
