@@ -8,14 +8,14 @@ namespace Project
         public static string name;
         static void Main()
         {
-            string uInput;
+            string uInput="0/";
             int input;
             do
             {
 
                 Console.WriteLine("Hardware                 1");
                 Console.WriteLine("Networking/Internet      2");
-                Console.WriteLine("Device/Phone/Tablet       3");
+                Console.WriteLine("Device/Phone/Tablet      3");
                 Console.WriteLine("I dont know              4");
                 Console.WriteLine("Close                    5");
                 input = Convert.ToInt32(Console.ReadLine());
@@ -26,9 +26,11 @@ namespace Project
 
                     case 1:
                         Hardware();
-                            break;
+                           break;
 
                     case 2:
+                        Console.Clear();
+                           
                         Networking();
 
                         break;
@@ -44,8 +46,8 @@ namespace Project
                         Unsure();
                         break;
 
-                    case 5:
-                        uInput = "5";
+                  case 5:
+                       uInput = "5";
                         break;
 
                            
@@ -231,13 +233,106 @@ namespace Project
 
 
         {
+
+            string answer="0/";
+
             Console.WriteLine("Hello Is your Networking Issue Device Related Y or N");
+            answer = answer.ToLower();
+
+
+            if (answer.Contains("y"))
+            {
+
+
+                Console.WriteLine("Is The computer using wifi or network cable");
+
+
+
+
+
+            }
+
+
+
+            if (answer.Contains("n"))
+
+            {
+
+                string uInput;
+                Console.WriteLine("Is you Modem Pluged in");
+
+                Console.WriteLine("Yes:     1");
+                Console.WriteLine("No       2");
+
+
+
+                uInput = Console.ReadLine();
+                uInput = uInput.ToLower();
+
+
+
+
+                switch (uInput)
+                {
+
+                    case  "1":
+                        Console.WriteLine("Please Plug in The Modem");
+                        break;
+
+
+
+                    case "2":
+
+                        Console.WriteLine("Are their any deviced wired directly to the modem");
+                        Console.WriteLine("yes or no");
+                        uInput = Console.ReadLine();
+                        uInput = uInput.ToLower();
+
+
+                        break;
+
+                    case "yes":
+                        Console.WriteLine("Please Unplug all the Devices conected and restart the modem" );
+
+                        break;
+
+
+
+                    case "no":
+
+                        Console.WriteLine("Are Their an cables pluged into the modem");
+                        uInput = "1";
+
+
+
+
+                        break;
+
+
+
+                       
+
+
+                }
 
 
 
 
 
 
+
+
+
+            }
+
+        
+
+
+            else
+            {
+
+                Main();
+            }
 
 
 
@@ -365,8 +460,8 @@ namespace Project
 
 
 
-            //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-            //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
@@ -465,8 +560,8 @@ namespace Project
 
 
 
-            //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-            //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
@@ -565,8 +660,8 @@ namespace Project
 
 
 
-            //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-            //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
@@ -574,9 +669,44 @@ namespace Project
 
 
 
+        static void Q4 ()    //Mobile devices and tablets
+        {
+            string answer, answer2, answer3;
+            Console.WriteLine("Are you using a phone or a tablet?");
+            answer = Console.ReadLine();
+            answer.ToLower();
+            if (answer == "phone")
+            {
+                Console.WriteLine("Is it an Android or an apple product?");
+                answer2 = Console.ReadLine();
+                answer2.ToLower();
+                if (answer2 == "apple")
+                {
+                    //call for switch 
+                }
+                if (answer2 == "android")
+                {
 
+                }
+            
+            }
+            else if (answer == "tablet")
+            {
+                Console.WriteLine("Is it an Android or an apple product?");
+                answer3 = Console.ReadLine();
+                answer3.ToLower();
+                if (answer3 == "apple")
+                {
 
+                }
 
+            }
+            else
+            {
+                Console.WriteLine("");
+                //call for switch
+            }
+        }
 
 
 
@@ -672,9 +802,9 @@ namespace Project
 
 
 
-            //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
+        //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 
@@ -738,6 +868,8 @@ namespace Project
 
 
 
-        
+
+
+
     }
 }
