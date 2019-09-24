@@ -8,12 +8,7 @@ namespace Project
         public static string name;
         static void Main()
         {
-
-
-
-                int input = 1;
-
-
+                int input;
 
                 do
                 {
@@ -21,51 +16,36 @@ namespace Project
                     Console.WriteLine("Welcome to The Menu");
                     Console.WriteLine();
                     Console.WriteLine();
-                    Console.WriteLine("Networking");
-                    Console.WriteLine("Option 2");
-                    Console.WriteLine("Option 3");
-                    Console.WriteLine("Option 4");
-                    Console.WriteLine("Option 5");
-                    Console.WriteLine("Close");
-                    input = Convert.ToInt16(Console.ReadLine());
+                    Console.WriteLine("1\tNetworking");
+                    Console.WriteLine("2\tSoftware");
+                    Console.WriteLine("3\tHardware");
+                    Console.WriteLine("4\tPhone/Tablet");
+                    Console.WriteLine("5\tUnsure");
+                    Console.WriteLine("6\tExit");
+                    input = Convert.ToInt32(Console.ReadLine());
 
                     Console.Clear();
 
 
-                    switch (input)
-                    {
-                        case 1:
-                            Networking();
-                            break;
-
-
-
-                  
-                    }
-
-
-
-
-
+                switch (input)
+                {
+                    case 1:
+                        Networking();
+                        break;
+                    case 2:
+                        Software();
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
+                    case 6:
+                        break;
+                }
                 } while (input != 0);
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
+            Console.ReadLine();
         }
 
         static void QSwitch()   //add all questions into here that don't have follow up questions and we will put them into a switch later
@@ -85,7 +65,7 @@ namespace Project
         //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
-        static void Q2()    //ANTIVIRUS one main question with its follow on questions attached
+        static void Software()    //ANTIVIRUS one main question with its follow on questions attached
         {
             string answer, answer2, answer3;
             Console.WriteLine("Do you have antivirus software installed on your computer?");
@@ -400,7 +380,7 @@ namespace Project
         static void Unsure()
         {
             string answer, answer2, answer3;
-
+            int choice;
 
             Console.WriteLine("Do you have a computer, phone or tablet that is not working correctly?");
             answer = Console.ReadLine();
@@ -409,8 +389,27 @@ namespace Project
             if (answer.Contains("y"))
             {
                 Console.WriteLine("Is the issue:");
-                Console.WriteLine("1\tInvolving the interface of the device (such as to do with apps, settings, or functionality)");
-                Console.WriteLine();
+                Console.WriteLine("1\tInvolving the interface of the device (such as to do with apps, settings, or functionality)?");
+                Console.WriteLine("2\tInvolving the use of or connectivity of internet?");
+                Console.WriteLine("3\tTo do with the physical aspect (such as blank screens, unresponsive keyboards or not functioning buttons?");
+                Console.WriteLine("4\tNone of the above");
+                choice = Convert.ToInt32(Console.ReadLine());
+
+                switch (choice)
+                {
+                    case 1:
+                        Console.WriteLine("It seems you have an ");
+                        break;
+                    case 2:
+
+                        break;
+                    case 3:
+
+                        break;
+                    default:
+
+                        break;
+                }
             }
 
         }
