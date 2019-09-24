@@ -21,7 +21,7 @@ namespace Project
                     Console.WriteLine("3\tHardware");
                     Console.WriteLine("4\tPhone/Tablet");
                     Console.WriteLine("5\tUnsure");
-                    Console.WriteLine("6\tExit");
+                    Console.WriteLine("0\tExit");
                     input = Convert.ToInt32(Console.ReadLine());
 
                     Console.Clear();
@@ -36,12 +36,15 @@ namespace Project
                         Software();
                         break;
                     case 3:
+                        Hardware();
                         break;
                     case 4:
+                        
                         break;
                     case 5:
+                        Unsure();
                         break;
-                    case 6:
+                    default:
                         break;
                 }
                 } while (input != 0);
@@ -580,7 +583,7 @@ namespace Project
                         break;
                 }
             }*/
-            string answer,ans2;
+            string answer, ans2;
             Console.WriteLine("Are you facing a Monitor issue Y or N?");
             answer = Console.ReadLine();
             answer = answer.ToLower();
@@ -608,7 +611,7 @@ namespace Project
             }
             else
             {
-                string ans3, ans4,ans5,ans6;
+                string ans3, ans4, ans5, ans6;
                 Console.WriteLine("Is your DESKTOP shtting off randomly? Y or N");
                 ans3 = Console.ReadLine();
                 ans3 = ans3.ToLower();
@@ -639,118 +642,8 @@ namespace Project
 
                 }
             }
-            
 
-
-
-        //////////////////////Seymore's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-        //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-        //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-
-
-
-
-
+        }
 
                 //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
@@ -972,4 +865,4 @@ namespace Project
 
     }
 
-}
+
