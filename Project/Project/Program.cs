@@ -5,7 +5,7 @@ namespace Project
 {
     class Project1
     {
-        static string name;
+        public static string name;
         static void Main()
         {
             //use main to test
