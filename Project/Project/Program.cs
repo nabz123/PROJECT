@@ -8,7 +8,70 @@ namespace Project
         public static string name;
         static void Main()
         {
-            //use main to test
+            string uInput;
+            int input;
+            do
+            {
+
+                Console.WriteLine("Hardware                 1");
+                Console.WriteLine("Networking/Internet      2");
+                Console.WriteLine("Device/Phone/Tablet       3");
+                Console.WriteLine("I dont know              4");
+                Console.WriteLine("Close                    5");
+                input = Convert.ToInt32(Console.ReadLine());
+
+
+                switch (input)
+                {
+
+                    case 1:
+                        Hardware();
+                            break;
+
+                    case 2:
+                        Networking();
+
+                        break;
+
+
+                    case 3:
+
+                        Device();
+                        break;
+
+                    case 4:
+
+                        Dontknow();
+                        break;
+
+                    case 5:
+                        uInput = "5";
+                        break;
+
+                           
+                        
+
+
+
+
+
+                }
+
+
+
+
+            } while (uInput != "5");
+
+
+
+
+
+
+
+
+
+
+
         }
 
         static void QSwitch()   //add all questions into here that don't have follow up questions and we will put them into a switch later
@@ -135,6 +198,7 @@ namespace Project
 
         {
             Console.WriteLine("Hello Is your Networking Issue Device Related Y or N");
+
 
 
 
