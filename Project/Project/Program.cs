@@ -402,7 +402,7 @@ namespace Project
             }
             else
             {
-                Console.WriteLine("Is your desktop shutting off randomly?");
+                Console.WriteLine("Is your desktop shutting down randomly?");
                 ans3 = Console.ReadLine();
                 ans3 = ans3.ToLower();
                 if (ans3.Contains("y"))
