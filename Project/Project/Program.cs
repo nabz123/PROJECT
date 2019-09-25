@@ -228,20 +228,19 @@ namespace Project
                     case "yes":
                     case "y":
                         Console.WriteLine("Are their any deviced wired directly to the modem?");
-                        Console.WriteLine("yes or no");
                         uInput = Console.ReadLine();
                         uInput = uInput.ToLower();
 
 
                         if (uInput.Contains("y"))
                         {
-                            Console.WriteLine("Please unplug all devices excpet your device");
+                            Console.WriteLine("Please unplug all devices excpet your device.");
                             Console.WriteLine("Please retry conection, do you have internet?");
                             uInput = Console.ReadLine();
                             uInput = uInput.ToLower();
 
 
-                            if (uInput.Contains("yes"))
+                            if (uInput.Contains("y"))
                             {
                                 Console.WriteLine("Glad I could help have a nice day!");
                                 Thread.Sleep(2500);
