@@ -380,7 +380,7 @@ namespace Project
                     {
                         case "cable":
                         case "cables":
-                            Console.WriteLine("Your cables may be loose. Try plugging it in again.");
+                            Console.WriteLine("Your cables may be loose. Try plugging them in again.");
                             Thread.Sleep(2500);
                             Main();
                             break;
@@ -389,7 +389,9 @@ namespace Project
                             Console.WriteLine("Are you sure your RAM is installed correctly?");
                             break;
                         default:
-                            Console.WriteLine("Have you troubleshooted it for problems?");
+                            Console.WriteLine("Please troubleshoot your device");
+                            Thread.Sleep(2500);
+                            Main();
                             break;
                     }
                 }
