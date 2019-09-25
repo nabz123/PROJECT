@@ -274,7 +274,46 @@ namespace Project
                             }
                         }
 
+
+
+                        else
+                        {
+                            Console.WriteLine("Please Conect Your Device to the modem");
+                            Console.WriteLine("Do you now have internet?");
+
+                            uInput = Console.ReadLine();
+                            uInput = uInput.ToLower();
+
+
+                            if (uInput.Contains("yes"))
+                            {
+                                Console.WriteLine("Glad i could help have a nice day!");
+                                Thread.Sleep(2000);
+                                Main();
+
+                            }
+
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("Please restart the modem and check your ethernet cable");
+                                Thread.Sleep(2000);
+                                Main();
+                            }
+
+
+
+
+
+                        }
+
+
+
+
                         break;
+
+
+
 
 
                 }
@@ -285,13 +324,7 @@ namespace Project
 
 
 
-            else
-            {
-                Console.Clear();
-                Console.WriteLine("Please restart the modem");
-                Thread.Sleep(2000);
-                Main();
-            }
+          
 
         }
 
