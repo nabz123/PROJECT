@@ -390,6 +390,12 @@ namespace Project
                         if (anss5.Contains("y"))
                         {
                             Console.WriteLine("Do you think this issue is from your primary device or peripherals?");
+                            ans3 = Console.ReadLine();
+                            ans3 = ans3.ToLower();
+                            if (ans3.Contains("primary"))
+                            {
+                                Console.WriteLine("Try");
+                            }
                         }   
                         break;
                     case "display":
