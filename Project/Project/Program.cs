@@ -7,7 +7,7 @@ namespace Project
     {
         public static string name;
         public static int count = 0;
-        static void Main()
+        static void Main()                                      //everytime you call for a main insert a Console.WriteLine statement and Thread.Sleep(1500);
         {
             int input;
 
@@ -76,39 +76,67 @@ namespace Project
 
         static void Software()    //ANTIVIRUS one main question with its follow on questions attached
         {
-            string answer, answer2, answer3;
+            string answer, answer2, answer3, answer4, browser;
             Console.WriteLine("Do you have antivirus software installed on your computer?");
             answer = Console.ReadLine();
             answer.ToLower();
             if (answer.Contains("y"))
             {
-                Console.WriteLine("Does your antivirus software regulary scan for viruses?");
+                Console.WriteLine("Does your antivirus software regularly scan for viruses?");
                 answer2 = Console.ReadLine();
                 answer2.ToLower();
                 if (answer2.Contains("y"))
                 {
-                    //call for switch 
+                    Console.WriteLine("Do you believe that your computer has Malware?");
+                    answer4 = Console.ReadLine();
+                    answer4.ToLower();
+
+                    if (answer4.Contains("y"))
+                    {
+                        Console.WriteLine("Please get your antivirus software to do a full computer scan and eliminate all threats");
+                        Thread.Sleep(1500);
+                        Main();
+                    }
+                    else
+                    {
+                        Console.WriteLine("What browser do you use?");
+                        browser = Console.ReadLine();
+                        Console.WriteLine($"Have you had problems with {browser} before?");
+                        answer4 = Console.ReadLine();
+                        answer4.ToLower();
+
+                        if (answer4.Contains("y"))
+                        {
+                            Console.WriteLine("Try using a different broswer and see if that helps.");
+                            Thread.Sleep(1500);
+                            Main();
+                        }
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("Do you know how to set your software up to reguarly scan?");
+                    Console.WriteLine("Do you know how to set your software up to regularly scan?");
                     answer3 = Console.ReadLine();
                     answer3.ToLower();
                     if (answer3.Contains("y"))
                     {
-                        //call for switch
+                        Console.WriteLine("It is important that your antivirus software runs scans regularly.");
+                        Thread.Sleep(1500);
+                        Main();
                     }
                     else
                     {
-                        Console.WriteLine("It is important that your antivirus software runs scans regulary.");
-                        //call for switch
+                        Console.WriteLine("It is important that your antivirus software runs scans, please consult the preferred softwares manual to learn how to schedule scans.");
+                        Thread.Sleep(1500);
+                        Main();
                     }
                 }
             }
             else
             {
                 Console.WriteLine("It is important to install an antivirus software on your computer");
-                //call for switch
+                Thread.Sleep(1500);
+                Main();
             }
             Console.ReadLine();
         }
