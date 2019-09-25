@@ -407,7 +407,7 @@ namespace Project
             {
                 Console.WriteLine("Is the issue:");
                 Console.WriteLine("1\tInvolving the interface of the device (such as to do with apps, settings, or functionality)");
-                Console.WriteLine();
+                Console.WriteLine("2\t");
             }
         }
 
