@@ -52,7 +52,7 @@ namespace Project
                         Unsure();
                         break;
                     default:
-                        Console.WriteLine("Thank you");
+                        Console.WriteLine($"Thank you, {name}");
                         Thread.Sleep(1500);
                         Environment.Exit(-1);
                         break;
@@ -292,7 +292,16 @@ namespace Project
                         Main();
                         break;
                     default:
+                        Console.WriteLine("Is this issue to do with your phone/tablet?");
+                        answer2 = Console.ReadLine();
+                        answer2 = answer2.ToLower();
 
+                        if (answer2.Contains("y"))
+                        {
+                            Console.WriteLine("It seems you have a phone/tablet related issue. I am transferring you back to the menu. Please press 4");
+                            Thread.Sleep(1500);
+                            Main();
+                        }
                         break;
                 }
             }
@@ -309,7 +318,7 @@ namespace Project
 
             if (answer.Contains("y"))
             {
-                Console.WriteLine("Do you believe this porblem is related to something such as cables? Or are you not sure?");
+                Console.WriteLine("Do you believe this problem is related to something such as cables? Or are you not sure?");
                 ans2 = Console.ReadLine();
                 ans2 = ans2.ToLower();
 
@@ -369,12 +378,12 @@ namespace Project
                         {
                             case "slow":
                             case "freezing":
-                                Console.WriteLine("Have you checked the Task Manger for your Memory usage? Y or N");
+                                Console.WriteLine("Have you checked the Task Manger for your Memory usage?");
                                 ans7 = Console.ReadLine();
                                 ans7 = ans7.ToLower();
                                 if (ans6.Contains("n"))
                                 {
-                                    Console.WriteLine("Have you check your avialable on storage on your device Y or N");
+                                    Console.WriteLine("Have you check your avialable on storage on your device?");
                                     ans8 = Console.ReadLine();
                                     ans8 = ans8.ToLower();
                                     Console.WriteLine("Have you deleted the temp files?");
