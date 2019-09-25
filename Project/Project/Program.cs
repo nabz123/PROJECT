@@ -57,14 +57,14 @@ namespace Project
                         Environment.Exit(-1);
                         break;
                 }
-            } 
+            }
             Console.ReadLine();
         }
 
         //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
-        static void Software()    
+        static void Software()
         {
             string answer, answer2, answer3, answer4, browser;
             Console.WriteLine("Do you have antivirus software installed on your computer?");
@@ -198,7 +198,7 @@ namespace Project
                         Main();
 
                         break;
-                       
+
 
                 }
 
@@ -227,7 +227,6 @@ namespace Project
 
 
 
-
                 switch (uInput)
                 {
 
@@ -243,37 +242,67 @@ namespace Project
                     case "yes":
                         Console.Clear();
                         Console.WriteLine("Are their any deviced wired directly to the modem");
-                        Console.WriteLine("y or n");
+                        Console.WriteLine("yes or no");
                         uInput = Console.ReadLine();
                         uInput = uInput.ToLower();
-                      
-                        
-                        if (uInput.Contains("y"))
+
+
+                        if (uInput.Contains("yes"))
 
                         {
                             Console.Clear();
-                            Console.WriteLine("Please unplug all devices excpet you device" );
-                            Thread.Sleep(2000);
-                            Main();
+                            Console.WriteLine("Please unplug all devices excpet your device");
+                            Console.WriteLine("Please retry conection do you have internet?");
+                            uInput = Console.ReadLine();
+                            uInput = uInput.ToLower();
+
+
+                            if (uInput.Contains("yes"))
+                            {
+                                Console.WriteLine("Glad i could help have a nice day!");
+                                Thread.Sleep(2000);
+                                Main();
+
+                            }
+
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("Please restart the modem");
+                                Thread.Sleep(2000);
+                                Main();
+                            }
                         }
 
-                        else
-                        {
-                            Console.Clear();
-                            Console.WriteLine("Please restart the modem");
-                            Thread.Sleep(2000);
-                            Main();
-                        }
                         break;
-                }
-              
-            }
-        
 
-            Console.ReadLine();
+
+                }
+            }
+
+
+
+
+
+
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Please restart the modem");
+                Thread.Sleep(2000);
+                Main();
+            }
+
         }
 
+    
 
+
+
+
+    
+
+         
 
 
 
