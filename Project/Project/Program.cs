@@ -1077,6 +1077,9 @@ namespace Project
 
 
 
+<<<<<<< HEAD
+            //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
+=======
 
 
 
@@ -1156,6 +1159,7 @@ namespace Project
 
 
             Console.ReadLine();
+>>>>>>> 10ed773ae64d02f558571028c3db1a25b3ecf9ad
         }
 
     }
