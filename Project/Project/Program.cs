@@ -202,11 +202,7 @@ namespace Project
 
                 }
             }
-
-
-
-            if (answer.Contains("n"))
-
+            else
             {
 
                 string uInput;
@@ -215,14 +211,12 @@ namespace Project
                 uInput = Console.ReadLine();
                 uInput = uInput.ToLower();
 
-
-
                 switch (uInput)
                 {
 
                     case "no":
                     case "n":
-                        Console.WriteLine("Please Plug in The Modem.");
+                        Console.WriteLine("Please plug in the modem.");
                         Thread.Sleep(2000);
                         Main();
                         break;
@@ -242,7 +236,7 @@ namespace Project
 
                             if (uInput.Contains("y"))
                             {
-                                Console.WriteLine("Glad I could help have a nice day!");
+                                Console.WriteLine("If further issues perssist, contact your provider.");
                                 Thread.Sleep(2500);
                                 Main();
                             }
@@ -250,9 +244,6 @@ namespace Project
                             {
 
                                 Console.WriteLine("Please restart your modem");
-
-                                Console.WriteLine("Please restart the modem.");
-
                                 Thread.Sleep(2500);
                                 Main();
                             }
@@ -279,11 +270,8 @@ namespace Project
                             }
                         }
                         break;
-                    
                 }
             }
-          
-
         }
 
 
