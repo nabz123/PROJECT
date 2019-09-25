@@ -239,7 +239,6 @@ namespace Project
                             uInput = Console.ReadLine();
                             uInput = uInput.ToLower();
 
-
                             if (uInput.Contains("y"))
                             {
                                 Console.WriteLine("Glad I could help have a nice day!");
