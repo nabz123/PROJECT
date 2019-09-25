@@ -15,8 +15,6 @@ namespace Project
                 UserName();
                 count++;
             }
-
-            do
             {
                 Console.Clear();
                 Console.WriteLine($"Welcome to The Menu, {name}");
@@ -53,10 +51,12 @@ namespace Project
                         Unsure();
                         break;
                     default:
-
+                        Console.WriteLine("Thank you");
+                        Thread.Sleep(1500);
+                        Environment.Exit(-1);
                         break;
                 }
-            } while (input != 0);
+            } 
             Console.ReadLine();
         }
 
