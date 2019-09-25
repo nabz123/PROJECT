@@ -166,6 +166,7 @@ namespace Project
             string answer = "0/";
 
             Console.WriteLine("Hello Is your Networking Issue Device Related Y or N");
+            answer = Console.ReadLine();
             answer = answer.ToLower();
 
 
@@ -180,14 +181,22 @@ namespace Project
                 {
 
                     case "wifi":
+                        Console.Clear();
                         Console.WriteLine("Please Reboot Modem");
+                        Thread.Sleep(2000);
+                        Main();
                         break;
 
 
 
 
+
                     case "cable":
-                        Console.WriteLine("Please check cable");
+                        Console.Clear();
+                        Console.WriteLine("Please check cable and try another ");
+                        Thread.Sleep(2000);
+                        Main();
+
                         break;
                        
 
@@ -223,29 +232,37 @@ namespace Project
                 {
 
                     case "no":
+                        Console.Clear();
                         Console.WriteLine("Please Plug in The Modem");
+                        Thread.Sleep(2000);
+                        Main();
                         break;
 
 
 
                     case "yes":
-
+                        Console.Clear();
                         Console.WriteLine("Are their any deviced wired directly to the modem");
-                        Console.WriteLine("yes or no");
+                        Console.WriteLine("y or n");
                         uInput = Console.ReadLine();
                         uInput = uInput.ToLower();
                       
                         
-                        if (uInput.Contains("Y"))
+                        if (uInput.Contains("y"))
 
                         {
+                            Console.Clear();
                             Console.WriteLine("Please unplug all devices excpet you device" );
-
+                            Thread.Sleep(2000);
+                            Main();
                         }
 
                         else
                         {
+                            Console.Clear();
                             Console.WriteLine("Please restart the modem");
+                            Thread.Sleep(2000);
+                            Main();
                         }
                         break;
                 }
