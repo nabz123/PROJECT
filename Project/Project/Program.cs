@@ -367,7 +367,7 @@ namespace Project
         static void Hardware()
         {
 
-            string answer, ans2, ans3, ans4, ans5, ans6, ans7, ans8, anss, anss1, anss2, anss3, anss4;
+            string answer, ans2, ans3, ans4, ans5, ans6, ans7, ans8, anss, anss1, anss2, anss3, anss4, anss5;
             Console.WriteLine("Are you facing a Monitor issue?");
             answer = Console.ReadLine();
             answer = answer.ToLower();
@@ -383,14 +383,22 @@ namespace Project
                     case "cables":
                     case "cable":
                         Console.WriteLine("Have you tried unplugging and replugging in your cables?");
+                        anss5 = Console.ReadLine();
+                        anss5 = anss5.ToLower();
+                        if (anss5.Contains("y"))
+                        {
+                            Console.WriteLine("Do you think this iussue is from your primary device or a peripherals issue");
+                        }   
                         break;
+
                     case "display":
                     case "light":
                     case "black screen":
                     case "blank screen":
                         Console.WriteLine("Is your device connected properly?");
-                        break;
 
+                        break;
+                    
                 }
             }
             else
