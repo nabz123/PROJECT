@@ -380,7 +380,9 @@ namespace Project
                     {
                         case "cable":
                         case "cables":
-                            Console.WriteLine("Is the cable loose? If so try pushing in?");
+                            Console.WriteLine("Your cables may be loose. Try plugging it in again.");
+                            Thread.Sleep(2500);
+                            Main();
                             break;
                         case "RAM":
                         case "ram":
