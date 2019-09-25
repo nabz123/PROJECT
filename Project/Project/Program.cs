@@ -414,7 +414,9 @@ namespace Project
                             break;
                         case "RAM":
                         case "ram":
-                            Console.WriteLine("Are you sure your RAM is installed correctly?");
+                            Console.WriteLine("Please check to make sure that your RAM is installed correctly.");
+                            Thread.Sleep(2500);
+                            Main();
                             break;
                         default:
                             Console.WriteLine("Please troubleshoot your device");
