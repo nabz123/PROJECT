@@ -171,9 +171,30 @@ namespace Project
 
             if (answer.Contains("y"))
             {
-
-
                 Console.WriteLine("Is The computer using wifi or network cable");
+                string uInput;
+                uInput = Console.ReadLine();
+                uInput = uInput.ToLower();
+
+                switch (uInput)
+                {
+
+                    case "wifi":
+                        Console.WriteLine("Please Reboot Modem");
+                        break;
+
+
+
+
+                    case "cable":
+                        Console.WriteLine("Please check cable");
+                        break;
+                       
+
+                }
+
+
+
 
 
 
@@ -189,11 +210,8 @@ namespace Project
 
                 string uInput;
                 Console.WriteLine("Is you Modem Pluged in");
-
-                Console.WriteLine("Yes:     1");
-                Console.WriteLine("No       2");
-
-
+                Console.WriteLine("Yes");
+                Console.WriteLine("No");
 
                 uInput = Console.ReadLine();
                 uInput = uInput.ToLower();
@@ -204,48 +222,58 @@ namespace Project
                 switch (uInput)
                 {
 
-                    case "1":
+                    case "no":
                         Console.WriteLine("Please Plug in The Modem");
                         break;
 
 
 
-                    case "2":
+                    case "yes":
 
                         Console.WriteLine("Are their any deviced wired directly to the modem");
                         Console.WriteLine("yes or no");
                         uInput = Console.ReadLine();
                         uInput = uInput.ToLower();
+                      
+                        
+                        if (uInput.Contains("Y"))
 
+                        {
+                            Console.WriteLine("Please unplug all devices excpet you device" );
 
-                        break;
+                        }
 
-                    case "yes":
-                        Console.WriteLine("Please Unplug all the Devices conected and restart the modem");
-
-                        break;
-
-
-
-                    case "no":
-
-                        Console.WriteLine("Are Their an cables pluged into the modem");
-                        uInput = "1";
-
-
-
-
+                        else
+                        {
+                            Console.WriteLine("Please restart the modem");
+                        }
                         break;
                 }
+              
             }
-            else
-            {
-
-                Main();
-            }
+        
 
             Console.ReadLine();
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         static void Unsure()
         {
             string answer, answer2, answer3;
