@@ -53,7 +53,7 @@ namespace Project
                         break;
                     default:
                         Console.WriteLine($"Thank you, {name}");
-                        Thread.Sleep(1500);
+                        Thread.Sleep(2500);
                         Environment.Exit(-1);
                         break;
                 }
@@ -83,7 +83,7 @@ namespace Project
 
                     if (answer4.Contains("y"))
                     {
-                        Console.WriteLine("Please get your antivirus software to do a full computer scan and eliminate all threats");
+                        Console.WriteLine("Please get your antivirus software to do a full computer scan and eliminate all threats.");
                         Thread.Sleep(2500);
                         Main();
                     }
@@ -290,7 +290,7 @@ namespace Project
                 Console.WriteLine("Is the issue:");
                 Console.WriteLine("1\tInvolving the interface of the device (such as to do with apps, settings, or functionality)?");
                 Console.WriteLine("2\tInvolving the use of or connectivity of internet?");
-                Console.WriteLine("3\tTo do with the physical aspect (such as blank screens, unresponsive keyboards or not functioning buttons?");
+                Console.WriteLine("3\tTo do with the physical aspect (such as blank screens, unresponsive keyboards or not functioning buttons)?");
                 Console.WriteLine("4\tNone of the above");
                 choice = Convert.ToInt32(Console.ReadLine());
 
@@ -298,17 +298,17 @@ namespace Project
                 {
                     case 1:
                         Console.WriteLine("It seems you have a software issue. I am transferring you back to the menu. Please press 2");
-                        Thread.Sleep(1500);
+                        Thread.Sleep(3500);
                         Main();
                         break;
                     case 2:
                         Console.WriteLine("It seems you have a networking issue. I am transferring you back to the menu. Please press 1");
-                        Thread.Sleep(1500);
+                        Thread.Sleep(3500);
                         Main();
                         break;
                     case 3:
                         Console.WriteLine("It seems you have a hardware issue. I am transferring you back to the menu. Please press 3");
-                        Thread.Sleep(1500);
+                        Thread.Sleep(3500);
                         Main();
                         break;
                     default:
@@ -319,7 +319,7 @@ namespace Project
                         if (answer2.Contains("y"))
                         {
                             Console.WriteLine("It seems you have a phone/tablet related issue. I am transferring you back to the menu. Please press 4");
-                            Thread.Sleep(1500);
+                            Thread.Sleep(3500);
                             Main();
                         }
                         else
