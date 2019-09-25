@@ -173,7 +173,7 @@ namespace Project
 
             if (answer.Contains("y"))
             {
-                Console.WriteLine("Is The computer using wifi or network cable");
+                Console.WriteLine("Is the computer using wifi or network cable");
                 string uInput;
                 uInput = Console.ReadLine();
                 uInput = uInput.ToLower();
@@ -227,10 +227,9 @@ namespace Project
 
                     case "yes":
                     case "y":
-                        Console.WriteLine("Are their any deviced wired directly to the modem?");
+                        Console.WriteLine("Is there any deviced wired directly into the modem?");
                         uInput = Console.ReadLine();
                         uInput = uInput.ToLower();
-
 
                         if (uInput.Contains("y"))
                         {
@@ -248,37 +247,35 @@ namespace Project
 
                             else
                             {
-                                Console.WriteLine("Please restart the modem");
+                                Console.WriteLine("Please restart the modem.");
                                 Thread.Sleep(2500);
                                 Main();
                             }
                         }
-
                         else
                         {
-                            Console.WriteLine("Please Conect Your Device to the modem");
+                            Console.WriteLine("Please connect your device to the modem.");
                             Console.WriteLine("Do you now have internet?");
                             uInput = Console.ReadLine();
                             uInput = uInput.ToLower();
 
-                            if (uInput.Contains("yes"))
+                            if (uInput.Contains("y"))
                             {
-                                Console.WriteLine("Glad i could help have a nice day!");
+                                Console.WriteLine("");
                                 Thread.Sleep(2500);
                                 Main();
 
                             }
-
                             else
                             {
-                                Console.WriteLine("Please restart the modem and check your ethernet cable");
+                                Console.WriteLine("Please restart the modem and check your ethernet cable.");
                                 Thread.Sleep(2500);
                                 Main();
                             }
                         }
 
 
-                        break;
+                 break;
                     
                 }
             }
