@@ -234,7 +234,7 @@ namespace Project
                         if (uInput.Contains("y"))
                         {
                             Console.WriteLine("Please unplug all devices excpet your device.");
-                            Console.WriteLine("Please retry conection, do you have internet?");
+                            Console.WriteLine("Please retry conection, do you have internet connect now?");
                             uInput = Console.ReadLine();
                             uInput = uInput.ToLower();
 
@@ -244,7 +244,6 @@ namespace Project
                                 Thread.Sleep(2500);
                                 Main();
                             }
-
                             else
                             {
                                 Console.WriteLine("Please restart the modem.");
@@ -255,13 +254,13 @@ namespace Project
                         else
                         {
                             Console.WriteLine("Please connect your device to the modem.");
-                            Console.WriteLine("Do you now have internet?");
+                            Console.WriteLine("Do you have internet connect now?");
                             uInput = Console.ReadLine();
                             uInput = uInput.ToLower();
 
                             if (uInput.Contains("y"))
                             {
-                                Console.WriteLine("");
+                                Console.WriteLine("If further issues perssist, contact your provider.");
                                 Thread.Sleep(2500);
                                 Main();
 
@@ -273,9 +272,7 @@ namespace Project
                                 Main();
                             }
                         }
-
-
-                 break;
+                        break;
                     
                 }
             }
