@@ -8,14 +8,14 @@ namespace Project
         public static string name;
         public static int count = 0;
         static void Main()                                      //everytime you call for a main insert a Console.WriteLine statement and
-        {                                                       //a Thread.Sleep(1500); or Thread.Sleep(2000); or Thread.Sleep(2500);
+        {                                                       //a Thread.Sleep(2000); or Thread.Sleep(2500); or Thread.Sleep(3000);
             int input;
 
-            while (count != 1)
-            {
-                UserName();
-                count++;
-            }
+            //while (count != 1)
+            //{
+            //    UserName();
+            //    count++;
+            //}
             {
                 Console.Clear();
                 Console.WriteLine($"Welcome to The Menu, {name}");
@@ -64,7 +64,7 @@ namespace Project
         //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
-        static void Software()    //ANTIVIRUS one main question with its follow on questions attached
+        static void Software()    
         {
             string answer, answer2, answer3, answer4, browser;
             Console.WriteLine("Do you have antivirus software installed on your computer?");
@@ -84,7 +84,7 @@ namespace Project
                     if (answer4.Contains("y"))
                     {
                         Console.WriteLine("Please get your antivirus software to do a full computer scan and eliminate all threats");
-                        Thread.Sleep(1500);
+                        Thread.Sleep(2500);
                         Main();
                     }
                     else
@@ -98,7 +98,7 @@ namespace Project
                         if (answer4.Contains("y"))
                         {
                             Console.WriteLine("Try using a different broswer and see if that helps.");
-                            Thread.Sleep(1500);
+                            Thread.Sleep(2500);
                             Main();
                         }
                         else
@@ -110,13 +110,13 @@ namespace Project
                             if (answer4.Contains("y"))
                             {
                                 Console.WriteLine("I am returning you to the menu, it seems this issue is networking related. Please press 1");
-                                Thread.Sleep(1500);
+                                Thread.Sleep(3000);
                                 Main();
                             }
                             else
                             {
                                 Console.WriteLine("Try doing a complete shutdown of your computer.");
-                                Thread.Sleep(1500);
+                                Thread.Sleep(2500);
                                 Main();
                             }
                         }
@@ -130,13 +130,13 @@ namespace Project
                     if (answer3.Contains("y"))
                     {
                         Console.WriteLine("It is important that your antivirus software runs scans regularly.");
-                        Thread.Sleep(1500);
+                        Thread.Sleep(2500);
                         Main();
                     }
                     else
                     {
                         Console.WriteLine("It is important that your antivirus software runs scans, please consult the preferred softwares manual to learn how to schedule scans.");
-                        Thread.Sleep(1500);
+                        Thread.Sleep(3000);
                         Main();
                     }
                 }
@@ -144,7 +144,7 @@ namespace Project
             else
             {
                 Console.WriteLine($"It is important to install an antivirus software on your computer, {name}.");
-                Thread.Sleep(1500);
+                Thread.Sleep(2500);
                 Main();
             }
             Console.ReadLine();
@@ -292,7 +292,45 @@ namespace Project
                             Thread.Sleep(1500);
                             Main();
                         }
+                        else
+                        {
+                            Console.WriteLine("Are you sure that you have a problem?");
+                            answer3 = Console.ReadLine();
+                            answer3 = answer3.ToLower();
+
+                            if (answer3.Contains("y"))
+                            {
+                                Console.WriteLine("Try turning it off and on again.");
+                                Thread.Sleep(2500);
+                                Main();
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Woah, {name}. Last time I asked you that question you gave me a different answer. I am going to transfer you back to the menu, please rethink your life choices.");
+                                Thread.Sleep(3500);
+                                Main();
+                            }
+                        }
                         break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Are you sure that you have a problem?");
+                answer3 = Console.ReadLine();
+                answer3 = answer3.ToLower();
+
+                if (answer3.Contains("y"))
+                {
+                    Console.WriteLine("Try turning it off and on again.");
+                    Thread.Sleep(2500);
+                    Main();
+                }
+                else
+                {
+                    Console.WriteLine($"Woah, {name}. Last time I asked you that question you gave me a different answer. I am going to transfer you back to the menu, please rethink your life choices.");
+                    Thread.Sleep(3500);
+                    Main();
                 }
             }
             Console.ReadLine();
