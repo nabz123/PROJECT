@@ -188,9 +188,6 @@ namespace Project
                         break;
 
 
-
-
-
                     case "cable":
                         Console.Clear();
                         Console.WriteLine("Please check cable and try another ");
@@ -201,14 +198,6 @@ namespace Project
 
 
                 }
-
-
-
-
-
-
-
-
             }
 
 
@@ -231,6 +220,7 @@ namespace Project
                 {
 
                     case "no":
+                    case "n":
                         Console.Clear();
                         Console.WriteLine("Please Plug in The Modem.");
                         Thread.Sleep(2000);
@@ -240,6 +230,7 @@ namespace Project
 
 
                     case "yes":
+                    case "y":
                         Console.Clear();
                         Console.WriteLine("Are their any deviced wired directly to the modem");
                         Console.WriteLine("yes or no");
@@ -248,7 +239,6 @@ namespace Project
 
 
                         if (uInput.Contains("yes"))
-
                         {
                             Console.Clear();
                             Console.WriteLine("Please unplug all devices excpet your device");
@@ -274,8 +264,6 @@ namespace Project
                             }
                         }
 
-
-
                         else
                         {
                             Console.WriteLine("Please Conect Your Device to the modem");
@@ -300,56 +288,14 @@ namespace Project
                                 Thread.Sleep(2000);
                                 Main();
                             }
-
-
-
-
-
                         }
-
-
-
-
                         break;
-
-
-
-
 
                 }
             }
-
-
-
-
-
-
           
 
         }
-
-    
-
-
-
-
-    
-
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -469,7 +415,6 @@ namespace Project
                             Console.WriteLine("Do you think this iussue is from your primary device or a peripherals issue");
                         }   
                         break;
-
                     case "display":
                     case "light":
                     case "black screen":
