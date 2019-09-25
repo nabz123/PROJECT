@@ -389,11 +389,7 @@ namespace Project
                         anss5 = anss5.ToLower();
                         if (anss5.Contains("y"))
                         {
-
-                            Console.WriteLine("Do you think this issue is from your primary device or a peripherals issue");
-
                             Console.WriteLine("Do you think this issue is from your primary device or peripherals?");
-
                         }   
                         break;
                     case "display":
@@ -401,9 +397,7 @@ namespace Project
                     case "black screen":
                     case "blank screen":
                         Console.WriteLine("Is your device connected properly?");
-
                         break;
-                    
                 }
             }
             else
