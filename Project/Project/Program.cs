@@ -165,11 +165,8 @@ namespace Project
 
             string answer = "0/";
 
-<<<<<<< HEAD
             Console.WriteLine("Is your network issue device related?");
-=======
             Console.WriteLine("Hello Is your networking issue related to one device");
->>>>>>> 60bac77a0f0bef96ebc74a615b5d02ac3f474454
             answer = Console.ReadLine();
             answer = answer.ToLower();
 
@@ -211,13 +208,11 @@ namespace Project
             {
 
                 string uInput;
-<<<<<<< HEAD
                 Console.WriteLine("Is your modem plugged in?");
-=======
                 Console.WriteLine("Is your Modem Pluged in?");
                 Console.WriteLine("yes");
                 Console.WriteLine("no");
->>>>>>> 60bac77a0f0bef96ebc74a615b5d02ac3f474454
+
 
                 uInput = Console.ReadLine();
                 uInput = uInput.ToLower();
@@ -237,7 +232,6 @@ namespace Project
                     case "yes":
                     case "y":
                         Console.WriteLine("Are their any deviced wired directly to the modem?");
->
                         Console.WriteLine("Are their any devices wired directly to the modem");
                         Console.WriteLine("yes or no");
                         uInput = Console.ReadLine();
@@ -294,7 +288,7 @@ namespace Project
 
 
                         break;
-
+                    
                 }
             }
           
