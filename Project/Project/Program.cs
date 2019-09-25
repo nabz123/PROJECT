@@ -421,10 +421,14 @@ namespace Project
                             if (anss7.Contains("y"))
                             {
                                 Console.WriteLine("Please use a multimeter to insulate the origin of the issue");
+                                Thread.Sleep(2500);
+                                Main();
                             }
                             else
                             {
                                 Console.WriteLine("Please try using a different power cable");
+                                Thread.Sleep(2500);
+                                Main();
                             }
                         }
                         break;
