@@ -4,6 +4,7 @@
 
 ## MILESTONES: Tues and Thurs
 
+
 ## Cassidy
 
 - Q: Is there a problem with your internet?
@@ -15,7 +16,7 @@
 	- Q: Do you regulary access dodgy websites?
 	- Q: Have you ever opened up email attachments from an unrecognised sender?
 - Q: What colour lights does your modem have?
-	Q: Do the lights on your modem blink?
+	- Q: Do the lights on your modem blink?
 - Q: Do the LEDs on your computer case work when your computer is turned on?
 - Q: Is your computer running slower than normal?
 - Q: Is your internet running slower than normal?
@@ -47,8 +48,8 @@
 
 
 
-## NABEEL
-- Work w Seymour to find quesitons
+## Nabeel
+
 - Are you on a phone or a tablet?
 - Is it an andriod or apple porduct?
 - Is your PC running slow
@@ -58,4 +59,12 @@
 - When does this happen?
 - Do you face this issue frequintly? 
  
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ ## Bradley
+
+ Just add in any relevant questions you think of, this is a working space so don't worry if we have double ups or if they're shit. When we do our
+ code we will do it one question at a time first and then work out how to link all the questions together later.
+
+
+
+
