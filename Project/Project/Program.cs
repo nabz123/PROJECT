@@ -394,7 +394,15 @@ namespace Project
                             ans3 = ans3.ToLower();
                             if (ans3.Contains("primary"))
                             {
-                                Console.WriteLine("Try");
+                                Console.WriteLine("Try isolating your device to troubleshoot efficiently.");
+                                Thread.Sleep(2500);
+                                Main();
+                            }
+                            else
+                            {
+                                Console.WriteLine("Try isolating your peripheral device to troubleshoot efficiently.");
+                                Thread.Sleep(2500);
+                                Main();
                             }
                         }   
                         break;
@@ -432,7 +440,7 @@ namespace Project
                             Main();
                             break;
                         default:
-                            Console.WriteLine("Please troubleshoot your device");
+                            Console.WriteLine("Please troubleshoot your device using the OS troubleshooter.");
                             Thread.Sleep(2500);
                             Main();
                             break;
@@ -440,7 +448,7 @@ namespace Project
                 }
                 else
                 {
-                    Console.WriteLine("Is your computer slow? Y or N");
+                    Console.WriteLine("Is your computer slow?");
                     ans5 = Console.ReadLine();
                     ans5 = ans5.ToLower();
                     if (ans5.Contains("y"))
@@ -520,20 +528,20 @@ namespace Project
                                             if (anss4.Contains("y"))
                                             {
                                                 Console.WriteLine("It is possible that you have a problem with the cables and you may have to replace them.");
-                                                Thread.Sleep(2000);
+                                                Thread.Sleep(3000);
                                                 Main();
                                             }
                                             else
                                             {
                                                 Console.WriteLine("Make sure all cables are placed into the correct slot");
-                                                Thread.Sleep(2000);
+                                                Thread.Sleep(2500);
                                                 Main();
                                             }
                                         }
                                         else
                                         {
                                             Console.WriteLine("Make sure all cables are placed into the correct slot");
-                                            Thread.Sleep(2000);
+                                            Thread.Sleep(2500);
                                             Main();
                                         }
 
@@ -546,19 +554,21 @@ namespace Project
                                 else
                                 {
                                     Console.WriteLine("Try unplugged and re-plugging your cables.");
-                                    Thread.Sleep(2000);
+                                    Thread.Sleep(2500);
                                     Main();
                                 }
                                 break;
                             case "inside":
                             case "in":
-                                Console.WriteLine("");          //Nabeel do this
+                                Console.WriteLine("Please get a technician to check your computer.");
+                                Thread.Sleep(2500);
+                                Main();
                                 break;
                         }
                         if (check == true)
                         {
                             Console.WriteLine($"Last time I asked you that question you gave me a different answer, {name}. Please don't lie to me.");
-                            Thread.Sleep(2000);
+                            Thread.Sleep(2500);
                             Main();
                         }
                     }
@@ -567,13 +577,7 @@ namespace Project
             }
         }
 
-
-
-
         //////////////////////Nabeel's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-
-
         //////////////////////Bradley's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
