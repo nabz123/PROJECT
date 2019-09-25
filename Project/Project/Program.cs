@@ -455,6 +455,7 @@ namespace Project
 
                         switch (ans6)
                         {
+                            case "yes":
                             case "slow":
                             case "freezing":
                                 Console.WriteLine("Have you checked the Task Manger for your Memory usage?");
@@ -462,10 +463,28 @@ namespace Project
                                 ans7 = ans7.ToLower();
                                 if (ans6.Contains("n"))
                                 {
-                                    Console.WriteLine("Have you check your avialable on storage on your device?");
+                                    Console.WriteLine("Have you check your available on storage on your device?");
                                     ans8 = Console.ReadLine();
                                     ans8 = ans8.ToLower();
-                                    Console.WriteLine("Have you deleted the temp files?");
+
+                                    if (ans8.Contains("y"))
+                                    {
+                                        Console.WriteLine("Please delete your temp files.");
+                                        Thread.Sleep(2000);
+                                        Main();
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Please check the available storage to make sure you have enough.");
+                                        Thread.Sleep(2500);
+                                        Main();
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Try completely shutting down your computer.");
+                                    Thread.Sleep(2500);
+                                    Main();
                                 }
                                 break;
                         }
