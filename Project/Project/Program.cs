@@ -369,7 +369,7 @@ namespace Project
         static void Hardware()
         {
 
-            string answer, ans2, ans3, ans4, ans5, ans6, ans7, ans8, anss, anss1, anss2, anss3, anss4, anss5;
+            string answer, ans2, ans3, ans4, ans5, ans6, ans7, ans8, anss, anss1, anss2, anss3, anss4, anss5,anss6,anss7;
             Console.WriteLine("Are you facing a Monitor issue?");
             answer = Console.ReadLine();
             answer = answer.ToLower();
@@ -403,6 +403,22 @@ namespace Project
                     case "black screen":
                     case "blank screen":
                         Console.WriteLine("Is your device connected properly?");
+                        anss6 = Console.ReadLine();
+                        anss6 = anss6.ToLower();
+                        if (anss6.Contains("y"))
+                        {
+                            Console.WriteLine("Have you had any power surges occur to your device recently?");
+                            anss7 = Console.ReadLine();
+                            anss7 = anss7.ToLower();
+                            if (anss7.Contains("y"))
+                            {
+                                Console.WriteLine("Please use a multimeter to insulate the origin of the issue");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Please try using a different power cable");
+                            }
+                        }
                         break;
                 }
             }
