@@ -218,7 +218,7 @@ namespace Project
             {
 
                 string uInput;
-                Console.WriteLine("Is you Modem Pluged in");
+                Console.WriteLine("Is you Modem Pluged in?");
                 Console.WriteLine("Yes");
                 Console.WriteLine("No");
 
@@ -232,7 +232,7 @@ namespace Project
 
                     case "no":
                         Console.Clear();
-                        Console.WriteLine("Please Plug in The Modem");
+                        Console.WriteLine("Please Plug in The Modem.");
                         Thread.Sleep(2000);
                         Main();
                         break;
