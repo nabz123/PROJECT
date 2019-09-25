@@ -654,6 +654,20 @@ namespace Project
                 //call for switch
             }
             Console.ReadLine();
+
+
+            /*
+             * Battery Life?
+             * Does it fully charge?
+             * How often do you charge it?
+             * How often do you use it?
+             * Any issues with apps crashing?
+             * Are all of your apps up to date
+             * is your devices software up to date
+             * Do you have applications running
+             * What make is the device
+             * Do you have enough storage/memory
+             */
         }
     }
 }
