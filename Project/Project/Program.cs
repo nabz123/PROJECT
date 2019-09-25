@@ -209,10 +209,6 @@ namespace Project
 
                 string uInput;
                 Console.WriteLine("Is your modem plugged in?");
-                Console.WriteLine("Is your Modem Pluged in?");
-                Console.WriteLine("yes");
-                Console.WriteLine("no");
-
 
                 uInput = Console.ReadLine();
                 uInput = uInput.ToLower();
@@ -232,7 +228,6 @@ namespace Project
                     case "yes":
                     case "y":
                         Console.WriteLine("Are their any deviced wired directly to the modem?");
-                        Console.WriteLine("Are their any devices wired directly to the modem");
                         Console.WriteLine("yes or no");
                         uInput = Console.ReadLine();
                         uInput = uInput.ToLower();
@@ -242,8 +237,6 @@ namespace Project
                         {
                             Console.WriteLine("Please unplug all devices excpet your device");
                             Console.WriteLine("Please retry conection, do you have internet?");
-                            Console.WriteLine("Please unplug all devices ");
-                            Console.WriteLine("Please retry conection do you have internet?");
                             uInput = Console.ReadLine();
                             uInput = uInput.ToLower();
 
@@ -273,7 +266,7 @@ namespace Project
                             if (uInput.Contains("yes"))
                             {
                                 Console.WriteLine("Glad i could help have a nice day!");
-                                Thread.Sleep(2000);
+                                Thread.Sleep(2500);
                                 Main();
 
                             }
@@ -281,7 +274,7 @@ namespace Project
                             else
                             {
                                 Console.WriteLine("Please restart the modem and check your ethernet cable");
-                                Thread.Sleep(2000);
+                                Thread.Sleep(2500);
                                 Main();
                             }
                         }
