@@ -412,7 +412,7 @@ namespace Project
                         anss5 = anss5.ToLower();
                         if (anss5.Contains("y"))
                         {
-                            Console.WriteLine("Do you think this iussue is from your primary device or a peripherals issue");
+                            Console.WriteLine("Do you think this issue is from your primary device or a peripherals issue");
                         }   
                         break;
                     case "display":
