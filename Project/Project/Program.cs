@@ -11,11 +11,11 @@ namespace Project
         {                                                       //a Thread.Sleep(2000); or Thread.Sleep(2500); or Thread.Sleep(3000);
             int input;
 
-            //while (count != 1)
-            //{
-            //    UserName();
-            //    count++;
-            //}
+            while (count != 1)
+            {
+                UserName();
+                count++;
+            }
             {
                 Console.Clear();
                 Console.WriteLine($"Welcome to The Menu, {name}");
