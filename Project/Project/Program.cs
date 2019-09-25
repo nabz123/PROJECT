@@ -173,7 +173,11 @@ namespace Project
 
             if (answer.Contains("y"))
             {
+<<<<<<< HEAD
+                Console.WriteLine("Is The computer conntected via wifi or a network cable");
+=======
                 Console.WriteLine("Is the computer using wifi or network cable");
+>>>>>>> 70390c91ec0d055382a07f9a649b9dd79216c211
                 string uInput;
                 uInput = Console.ReadLine();
                 uInput = uInput.ToLower();
@@ -188,13 +192,11 @@ namespace Project
                         Main();
                         break;
 
-
                     case "cable":
                         Console.Clear();
                         Console.WriteLine("Please check cable and try another ");
                         Thread.Sleep(2000);
                         Main();
-
                         break;
 
 
@@ -246,7 +248,11 @@ namespace Project
                             }
                             else
                             {
+
+                                Console.WriteLine("Please restart your modem");
+
                                 Console.WriteLine("Please restart the modem.");
+
                                 Thread.Sleep(2500);
                                 Main();
                             }
