@@ -228,9 +228,11 @@ namespace Project
                         break;
 
 
-
+                    
                     case "yes":
-                    case "y":
+
+                        
+                  
 >
                         Console.Clear();
                         Console.WriteLine("Are their any devices wired directly to the modem");
@@ -244,6 +246,9 @@ namespace Project
                             Console.Clear();
                             Console.WriteLine("Please unplug all devices ");
                             Console.WriteLine("Please retry conection do you have internet?");
+                            Thread.Sleep(2000);
+                            Main();
+
                             uInput = Console.ReadLine();
                             uInput = uInput.ToLower();
 
