@@ -165,7 +165,7 @@ namespace Project
 
             string answer = "0/";
 
-            Console.WriteLine("Hello Is your networking issue related to one device");
+            Console.WriteLine("Hello Is your Networking Issue Device Related Y or N");
             answer = Console.ReadLine();
             answer = answer.ToLower();
 
@@ -182,13 +182,10 @@ namespace Project
 
                     case "wifi":
                         Console.Clear();
-                        Console.WriteLine("Please reboot modem");
+                        Console.WriteLine("Please Reboot Modem");
                         Thread.Sleep(2000);
                         Main();
                         break;
-
-
-
 
 
                     case "cable":
@@ -201,14 +198,6 @@ namespace Project
 
 
                 }
-
-
-
-
-
-
-
-
             }
 
 
@@ -218,9 +207,9 @@ namespace Project
             {
 
                 string uInput;
-                Console.WriteLine("Is your Modem Pluged in?");
-                Console.WriteLine("yes");
-                Console.WriteLine("no");
+                Console.WriteLine("Is you Modem Pluged in?");
+                Console.WriteLine("Yes");
+                Console.WriteLine("No");
 
                 uInput = Console.ReadLine();
                 uInput = uInput.ToLower();
@@ -231,6 +220,7 @@ namespace Project
                 {
 
                     case "no":
+                    case "n":
                         Console.Clear();
                         Console.WriteLine("Please Plug in The Modem.");
                         Thread.Sleep(2000);
@@ -240,19 +230,18 @@ namespace Project
 
 
                     case "yes":
-
+                    case "y":
                         Console.Clear();
-                        Console.WriteLine("Are their any devices wired directly to the modem");
+                        Console.WriteLine("Are their any deviced wired directly to the modem");
                         Console.WriteLine("yes or no");
                         uInput = Console.ReadLine();
                         uInput = uInput.ToLower();
 
 
                         if (uInput.Contains("yes"))
-
                         {
                             Console.Clear();
-                            Console.WriteLine("Please unplug all devices ");
+                            Console.WriteLine("Please unplug all devices excpet your device");
                             Console.WriteLine("Please retry conection do you have internet?");
                             uInput = Console.ReadLine();
                             uInput = uInput.ToLower();
@@ -263,6 +252,7 @@ namespace Project
                                 Console.WriteLine("Glad i could help have a nice day!");
                                 Thread.Sleep(2000);
                                 Main();
+
                             }
 
                             else
@@ -273,12 +263,15 @@ namespace Project
                                 Main();
                             }
                         }
+
                         else
                         {
                             Console.WriteLine("Please Conect Your Device to the modem");
                             Console.WriteLine("Do you now have internet?");
+
                             uInput = Console.ReadLine();
                             uInput = uInput.ToLower();
+
 
                             if (uInput.Contains("yes"))
                             {
@@ -296,42 +289,13 @@ namespace Project
                                 Main();
                             }
                         }
-
                         break;
+
                 }
             }
-
-
-
-
-
-
           
 
         }
-
-    
-
-
-
-
-    
-
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -451,7 +415,6 @@ namespace Project
                             Console.WriteLine("Do you think this iussue is from your primary device or a peripherals issue");
                         }   
                         break;
-
                     case "display":
                     case "light":
                     case "black screen":
