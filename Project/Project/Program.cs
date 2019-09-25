@@ -111,6 +111,25 @@ namespace Project
                             Thread.Sleep(1500);
                             Main();
                         }
+                        else
+                        {
+                            Console.WriteLine("Do you believe this issue may involve the internet?");
+                            answer4 = Console.ReadLine();
+                            answer4.ToLower();
+
+                            if (answer4.Contains("y"))
+                            {
+                                Console.WriteLine("I am returning you to the menu, it seems this issue is networking related. Please press 1");
+                                Thread.Sleep(1500);
+                                Main();
+                            }
+                            else
+                            {
+                                Console.WriteLine("Try doing a complete shutdown of your computer.");
+                                Thread.Sleep(1500);
+                                Main();
+                            }
+                        }
                     }
                 }
                 else
@@ -134,7 +153,7 @@ namespace Project
             }
             else
             {
-                Console.WriteLine("It is important to install an antivirus software on your computer");
+                Console.WriteLine($"It is important to install an antivirus software on your computer, {name}.");
                 Thread.Sleep(1500);
                 Main();
             }
@@ -258,13 +277,19 @@ namespace Project
                 switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("It seems you have an ");
+                        Console.WriteLine("It seems you have a software issue. I am transferring you back to the menu. Please press 2");
+                        Thread.Sleep(1500);
+                        Main();
                         break;
                     case 2:
-
+                        Console.WriteLine("It seems you have a networking issue. I am transferring you back to the menu. Please press 1");
+                        Thread.Sleep(1500);
+                        Main();
                         break;
                     case 3:
-
+                        Console.WriteLine("It seems you have a hardware issue. I am transferring you back to the menu. Please press 3");
+                        Thread.Sleep(1500);
+                        Main();
                         break;
                     default:
 
@@ -278,7 +303,7 @@ namespace Project
         {
 
             string answer, ans2, ans3, ans4, ans5, ans6, ans7, ans8, anss, anss1, anss2, anss3, anss4;
-            Console.WriteLine("Are you facing a Monitor issue Y or N?");
+            Console.WriteLine("Are you facing a Monitor issue?");
             answer = Console.ReadLine();
             answer = answer.ToLower();
 
