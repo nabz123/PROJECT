@@ -7,8 +7,8 @@ namespace Project
     {
         public static string name;
         public static int count = 0;
-        static void Main()                                      //everytime you call for a main insert a Console.WriteLine statement and Thread.Sleep(1500);
-        {
+        static void Main()                                      //everytime you call for a main insert a Console.WriteLine statement and
+        {                                                       //a Thread.Sleep(1500); or Thread.Sleep(2000); or Thread.Sleep(2500);
             int input;
 
             while (count != 1)
@@ -60,16 +60,6 @@ namespace Project
             } 
             Console.ReadLine();
         }
-
-        static void QSwitch()   //add all questions into here that don't have follow up questions and we will put them into a switch later
-        {
-            Console.WriteLine("What broswer do you use?");
-            Console.WriteLine("What operating system do you use?");
-            Console.WriteLine("How old is your computer?");
-            Console.WriteLine("When was the last time you shutdown your computer?");
-            Console.WriteLine("When was the last time you backed up your computer?");
-        }
-
 
         //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
@@ -332,19 +322,19 @@ namespace Project
                     case "light":
                     case "black screen":
                     case "blank screen":
-                        Console.WriteLine("Is your device connect proplerly?");
+                        Console.WriteLine("Is your device connected properly?");
                         break;
 
                 }
             }
             else
             {
-                Console.WriteLine("Is your desktop shutting off randomly? Y or N");
+                Console.WriteLine("Is your desktop shutting off randomly?");
                 ans3 = Console.ReadLine();
                 ans3 = ans3.ToLower();
                 if (ans3.Contains("y"))
                 {
-                    Console.WriteLine("Do you believe this is a RAM or cables issue? Or are you not sure??");
+                    Console.WriteLine("Do you believe this is a RAM or cable issue? Or are you not sure?");
                     ans4 = Console.ReadLine();
                     ans4 = ans4.ToLower();
 
@@ -426,18 +416,21 @@ namespace Project
                                             if (anss4.Contains("y"))
                                             {
                                                 Console.WriteLine("It is possible that you have a problem with the cables and you may have to replace them.");
-                                                //change back to menu
+                                                Thread.Sleep(2000);
+                                                Main();
                                             }
                                             else
                                             {
                                                 Console.WriteLine("Make sure all cables are placed into the correct slot");
-                                                //change back to menu
+                                                Thread.Sleep(2000);
+                                                Main();
                                             }
                                         }
                                         else
                                         {
                                             Console.WriteLine("Make sure all cables are placed into the correct slot");
-                                            //change back to menu
+                                            Thread.Sleep(2000);
+                                            Main();
                                         }
 
                                     }
@@ -449,7 +442,8 @@ namespace Project
                                 else
                                 {
                                     Console.WriteLine("Try unplugged and re-plugging your cables.");
-                                    //change back to menu
+                                    Thread.Sleep(2000);
+                                    Main();
                                 }
                                 break;
                             case "inside":
@@ -460,7 +454,8 @@ namespace Project
                         if (check == true)
                         {
                             Console.WriteLine($"Last time I asked you that question you gave me a different answer, {name}. Please don't lie to me.");
-                            //change back to menu
+                            Thread.Sleep(2000);
+                            Main();
                         }
                     }
                 }
