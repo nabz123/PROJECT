@@ -6,9 +6,10 @@ namespace Project
     class Project1
     {
         public static string name;
+        public static int count = 0;
         static void Main()
         {
-            int input, count = 0;
+            int input;
 
             while (count != 1)
             {
@@ -68,10 +69,6 @@ namespace Project
             Console.WriteLine("When was the last time you shutdown your computer?");
             Console.WriteLine("When was the last time you backed up your computer?");
         }
-
-
-
-
 
 
         //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
