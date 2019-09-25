@@ -57,14 +57,14 @@ namespace Project
                         Environment.Exit(-1);
                         break;
                 }
-            } 
+            }
             Console.ReadLine();
         }
 
         //////////////////////Casssidy's zone\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
-        static void Software()    
+        static void Software()
         {
             string answer, answer2, answer3, answer4, browser;
             Console.WriteLine("Do you have antivirus software installed on your computer?");
@@ -166,6 +166,7 @@ namespace Project
             string answer = "0/";
 
             Console.WriteLine("Hello Is your Networking Issue Device Related Y or N");
+            answer = Console.ReadLine();
             answer = answer.ToLower();
 
 
@@ -180,16 +181,24 @@ namespace Project
                 {
 
                     case "wifi":
+                        Console.Clear();
                         Console.WriteLine("Please Reboot Modem");
+                        Thread.Sleep(2000);
+                        Main();
                         break;
+
 
 
 
 
                     case "cable":
-                        Console.WriteLine("Please check cable");
+                        Console.Clear();
+                        Console.WriteLine("Please check cable and try another ");
+                        Thread.Sleep(2000);
+                        Main();
+
                         break;
-                       
+
 
                 }
 
@@ -218,45 +227,82 @@ namespace Project
 
 
 
-
                 switch (uInput)
                 {
 
                     case "no":
+                        Console.Clear();
                         Console.WriteLine("Please Plug in The Modem");
+                        Thread.Sleep(2000);
+                        Main();
                         break;
 
 
 
                     case "yes":
-
+                        Console.Clear();
                         Console.WriteLine("Are their any deviced wired directly to the modem");
                         Console.WriteLine("yes or no");
                         uInput = Console.ReadLine();
                         uInput = uInput.ToLower();
-                      
-                        
-                        if (uInput.Contains("Y"))
+
+
+                        if (uInput.Contains("yes"))
 
                         {
-                            Console.WriteLine("Please unplug all devices excpet you device" );
+                            Console.Clear();
+                            Console.WriteLine("Please unplug all devices excpet your device");
+                            Console.WriteLine("Please retry conection do you have internet?");
+                            uInput = Console.ReadLine();
+                            uInput = uInput.ToLower();
 
+
+                            if (uInput.Contains("yes"))
+                            {
+                                Console.WriteLine("Glad i could help have a nice day!");
+                                Thread.Sleep(2000);
+                                Main();
+
+                            }
+
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("Please restart the modem");
+                                Thread.Sleep(2000);
+                                Main();
+                            }
                         }
 
-                        else
-                        {
-                            Console.WriteLine("Please restart the modem");
-                        }
                         break;
-                }
-              
-            }
-        
 
-            Console.ReadLine();
+
+                }
+            }
+
+
+
+
+
+
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Please restart the modem");
+                Thread.Sleep(2000);
+                Main();
+            }
+
         }
 
+    
 
+
+
+
+    
+
+         
 
 
 
@@ -422,7 +468,9 @@ namespace Project
                             break;
                         case "RAM":
                         case "ram":
-                            Console.WriteLine("Are you sure your RAM is installed correctly?");
+                            Console.WriteLine("Please check to make sure that your RAM is installed correctly.");
+                            Thread.Sleep(2500);
+                            Main();
                             break;
                         default:
                             Console.WriteLine("Please troubleshoot your device");
@@ -444,6 +492,7 @@ namespace Project
 
                         switch (ans6)
                         {
+                            case "yes":
                             case "slow":
                             case "freezing":
                                 Console.WriteLine("Have you checked the Task Manger for your Memory usage?");
@@ -451,10 +500,28 @@ namespace Project
                                 ans7 = ans7.ToLower();
                                 if (ans6.Contains("n"))
                                 {
-                                    Console.WriteLine("Have you check your avialable on storage on your device?");
+                                    Console.WriteLine("Have you check your available on storage on your device?");
                                     ans8 = Console.ReadLine();
                                     ans8 = ans8.ToLower();
-                                    Console.WriteLine("Have you deleted the temp files?");
+
+                                    if (ans8.Contains("y"))
+                                    {
+                                        Console.WriteLine("Please delete your temp files.");
+                                        Thread.Sleep(2000);
+                                        Main();
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Please check the available storage to make sure you have enough.");
+                                        Thread.Sleep(2500);
+                                        Main();
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Try completely shutting down your computer.");
+                                    Thread.Sleep(2500);
+                                    Main();
                                 }
                                 break;
                         }
