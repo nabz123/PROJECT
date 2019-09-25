@@ -165,7 +165,8 @@ namespace Project
 
             string answer = "0/";
 
-            Console.WriteLine("Hello Is your Networking Issue Device Related Y or N");
+            Console.WriteLine("Is your network issue device related?");
+            Console.WriteLine("Hello Is your networking issue related to one device");
             answer = Console.ReadLine();
             answer = answer.ToLower();
 
@@ -182,7 +183,7 @@ namespace Project
 
                     case "wifi":
                         Console.Clear();
-                        Console.WriteLine("Please Reboot Modem");
+                        Console.WriteLine("Please reboot modem");
                         Thread.Sleep(2000);
                         Main();
                         break;
@@ -207,9 +208,7 @@ namespace Project
             {
 
                 string uInput;
-                Console.WriteLine("Is you Modem Pluged in?");
-                Console.WriteLine("Yes");
-                Console.WriteLine("No");
+                Console.WriteLine("Is your modem plugged in?");
 
                 uInput = Console.ReadLine();
                 uInput = uInput.ToLower();
@@ -221,45 +220,37 @@ namespace Project
 
                     case "no":
                     case "n":
-                        Console.Clear();
                         Console.WriteLine("Please Plug in The Modem.");
                         Thread.Sleep(2000);
                         Main();
                         break;
 
-
-
                     case "yes":
                     case "y":
-                        Console.Clear();
-                        Console.WriteLine("Are their any deviced wired directly to the modem");
-                        Console.WriteLine("yes or no");
+                        Console.WriteLine("Are their any deviced wired directly to the modem?");
                         uInput = Console.ReadLine();
                         uInput = uInput.ToLower();
 
 
-                        if (uInput.Contains("yes"))
+                        if (uInput.Contains("y"))
                         {
-                            Console.Clear();
-                            Console.WriteLine("Please unplug all devices excpet your device");
-                            Console.WriteLine("Please retry conection do you have internet?");
+                            Console.WriteLine("Please unplug all devices excpet your device.");
+                            Console.WriteLine("Please retry conection, do you have internet?");
                             uInput = Console.ReadLine();
                             uInput = uInput.ToLower();
 
 
-                            if (uInput.Contains("yes"))
+                            if (uInput.Contains("y"))
                             {
-                                Console.WriteLine("Glad i could help have a nice day!");
-                                Thread.Sleep(2000);
+                                Console.WriteLine("Glad I could help have a nice day!");
+                                Thread.Sleep(2500);
                                 Main();
-
                             }
 
                             else
                             {
-                                Console.Clear();
                                 Console.WriteLine("Please restart the modem");
-                                Thread.Sleep(2000);
+                                Thread.Sleep(2500);
                                 Main();
                             }
                         }
@@ -268,29 +259,28 @@ namespace Project
                         {
                             Console.WriteLine("Please Conect Your Device to the modem");
                             Console.WriteLine("Do you now have internet?");
-
                             uInput = Console.ReadLine();
                             uInput = uInput.ToLower();
-
 
                             if (uInput.Contains("yes"))
                             {
                                 Console.WriteLine("Glad i could help have a nice day!");
-                                Thread.Sleep(2000);
+                                Thread.Sleep(2500);
                                 Main();
 
                             }
 
                             else
                             {
-                                Console.Clear();
                                 Console.WriteLine("Please restart the modem and check your ethernet cable");
-                                Thread.Sleep(2000);
+                                Thread.Sleep(2500);
                                 Main();
                             }
                         }
-                        break;
 
+
+                        break;
+                    
                 }
             }
           
@@ -412,7 +402,11 @@ namespace Project
                         anss5 = anss5.ToLower();
                         if (anss5.Contains("y"))
                         {
+
                             Console.WriteLine("Do you think this issue is from your primary device or a peripherals issue");
+
+                            Console.WriteLine("Do you think this issue is from your primary device or peripherals?");
+
                         }   
                         break;
                     case "display":
